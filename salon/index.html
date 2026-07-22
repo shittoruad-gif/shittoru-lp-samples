@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>髪質改善とマンツーマン施術の隠れ家サロン｜Hair Salon SHITTORU（ヘアサロン しっとる）岡山駅徒歩5分</title>
+<meta name="description" content="岡山駅徒歩約5分。大人女性のための髪質改善とマンツーマン施術の隠れ家サロン Hair Salon SHITTORU。完全予約制・骨格と髪質の丁寧なカウンセリングで、扱いやすい髪へ。新規限定クーポンあり。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#f7f2ec;
+  --cream-deep:#f0e8dc;
+  --brown:#4a3628;
+  --brown-deep:#33241a;
+  --brown-soft:#6b5442;
+  --gold:#c9a24b;
+  --gold-dark:#a9853a;
+  --gold-pale:#e8d9b8;
+  --line-green:#06c755;
+  --line-green-dark:#05a648;
+  --border:#e3d9ca;
+  --text:#3b2f25;
+  --serif:'Noto Serif JP',serif;
+  --en:'Cormorant Garamond',serif;
+  --sans:'Noto Sans JP',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:var(--sans);
+  font-weight:400;
+  color:var(--text);
+  background:var(--cream);
+  line-height:1.95;
+  font-size:15px;
+  letter-spacing:.04em;
+  overflow-x:hidden;
+}
+img,svg,iframe{max-width:100%;display:block;}
+.wrap{max-width:680px;margin:0 auto;padding:0 24px;}
+
+/* ===== header ===== */
+.header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(247,242,236,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border);
+}
+.header-in{
+  max-width:680px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:12px 20px;
+}
+.logo{line-height:1.35;}
+.logo .en{
+  font-family:var(--en);font-size:17px;font-weight:600;
+  letter-spacing:.22em;color:var(--brown);
+  display:block;
+}
+.logo .ja{
+  font-size:9.5px;letter-spacing:.3em;color:var(--brown-soft);display:block;
+}
+.header-tel{
+  display:flex;align-items:center;gap:7px;
+  border:1px solid var(--brown);
+  color:var(--brown);
+  padding:8px 16px;border-radius:3px;
+  text-decoration:none;font-weight:500;font-size:13px;
+  letter-spacing:.08em;
+  transition:background .2s,color .2s;
+}
+.header-tel:active{background:var(--brown);color:#fff;}
+.header-tel svg{width:14px;height:14px;}
+.header-tel{white-space:nowrap;flex-shrink:0;}
+@media(max-width:480px){
+  .logo .en{font-size:13.5px;letter-spacing:.16em;}
+  .logo .ja{font-size:9px;letter-spacing:.2em;}
+}
+
+/* ===== hero ===== */
+.hero{
+  position:relative;
+  background:url("images/hero.jpg") center 40%/cover no-repeat;
+  color:#fff;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(26,17,10,.52) 0%,rgba(26,17,10,.42) 45%,rgba(26,17,10,.66) 100%);
+}
+.hero-in{
+  position:relative;z-index:2;
+  max-width:680px;margin:0 auto;
+  padding:88px 24px 72px;
+  text-align:center;
+}
+.hero-en{
+  font-family:var(--en);
+  font-size:13px;font-weight:500;
+  letter-spacing:.5em;text-indent:.5em;
+  color:var(--gold-pale);
+  margin-bottom:22px;
+}
+.hero-en::after{
+  content:"";display:block;
+  width:1px;height:34px;
+  background:linear-gradient(180deg,var(--gold),transparent);
+  margin:16px auto 0;
+}
+.hero h1{
+  font-family:var(--serif);
+  font-size:clamp(26px,7.2vw,40px);
+  font-weight:600;
+  line-height:1.75;
+  letter-spacing:.12em;
+  text-shadow:0 2px 24px rgba(0,0,0,.45);
+}
+.hero-sub{
+  margin-top:20px;
+  font-family:var(--serif);
+  font-size:clamp(13px,3.6vw,15px);
+  font-weight:400;
+  letter-spacing:.14em;
+  line-height:2.1;
+  color:rgba(255,255,255,.88);
+  text-shadow:0 1px 12px rgba(0,0,0,.5);
+}
+.hero-salon{
+  margin-top:34px;
+  display:inline-block;
+  border-top:1px solid rgba(201,162,75,.6);
+  border-bottom:1px solid rgba(201,162,75,.6);
+  padding:10px 26px;
+  font-size:11.5px;letter-spacing:.26em;text-indent:.26em;
+  color:rgba(255,255,255,.92);
+}
+/* coupon band on hero */
+.hero-coupon{
+  position:relative;z-index:2;
+  background:linear-gradient(90deg,#3a2a1d,var(--brown-deep));
+  border-top:1px solid rgba(201,162,75,.45);
+  padding:20px 24px 22px;
+  text-align:center;
+}
+.hero-coupon .cp-label{
+  font-family:var(--en);
+  color:var(--gold);font-size:12px;font-weight:600;
+  letter-spacing:.4em;text-indent:.4em;
+  margin-bottom:8px;
+}
+.hero-coupon .cp-main{
+  font-family:var(--serif);
+  color:#fff;font-size:clamp(15px,4.4vw,19px);
+  font-weight:600;letter-spacing:.06em;line-height:1.8;
+}
+.hero-coupon .cp-main .price{
+  color:var(--gold);font-size:1.35em;
+}
+.hero-coupon .cp-main .was{
+  font-size:.72em;color:rgba(255,255,255,.65);
+  text-decoration:line-through;font-weight:400;
+  margin-right:6px;
+}
+.hero-coupon .cp-sub{
+  margin-top:4px;
+  font-size:11px;color:rgba(255,255,255,.7);letter-spacing:.1em;
+}
+
+/* ===== CTA ===== */
+.cta{
+  background:var(--cream-deep);
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  padding:44px 0 48px;
+}
+.cta-dark{
+  background:var(--brown-deep);
+  border-color:rgba(201,162,75,.3);
+}
+.cta-title{
+  text-align:center;
+  font-family:var(--serif);
+  font-weight:600;
+  font-size:clamp(17px,4.8vw,21px);
+  letter-spacing:.12em;
+  color:var(--brown);
+  line-height:1.9;
+  margin-bottom:6px;
+}
+.cta-dark .cta-title{color:#f5eddd;}
+.cta-note{
+  text-align:center;font-size:12px;color:var(--brown-soft);
+  letter-spacing:.08em;margin-bottom:22px;
+}
+.cta-dark .cta-note{color:#b9a88f;}
+.cta-btns{display:flex;flex-direction:column;gap:13px;max-width:460px;margin:0 auto;}
+.btn{
+  display:flex;align-items:center;justify-content:center;gap:11px;
+  border-radius:4px;text-decoration:none;
+  font-weight:700;padding:17px 20px;
+  font-size:16px;letter-spacing:.06em;
+  position:relative;
+  transition:transform .15s ease,opacity .2s;
+}
+.btn:active{transform:scale(.98);opacity:.92;}
+.btn svg{width:22px;height:22px;flex-shrink:0;}
+.btn-line{
+  background:var(--line-green);
+  color:#fff;
+  box-shadow:0 4px 14px rgba(6,199,85,.32);
+}
+.btn-gold{
+  background:linear-gradient(135deg,#d4af5c,var(--gold) 45%,var(--gold-dark));
+  color:#fff;
+  box-shadow:0 4px 14px rgba(169,133,58,.35);
+}
+.btn small{display:block;font-size:10.5px;font-weight:400;opacity:.92;letter-spacing:.08em;}
+.btn .btn-inner{display:flex;flex-direction:column;align-items:flex-start;line-height:1.4;}
+.btn .arrow{
+  position:absolute;right:18px;top:50%;
+  width:8px;height:8px;
+  border-top:2px solid rgba(255,255,255,.9);
+  border-right:2px solid rgba(255,255,255,.9);
+  transform:translateY(-50%) rotate(45deg);
+}
+.btn-tel-num{font-family:var(--en);font-size:21px;font-weight:600;letter-spacing:.06em;}
+
+/* ===== sections ===== */
+section{padding:72px 0;}
+.sec-head{text-align:center;margin-bottom:36px;}
+.sec-en{
+  font-family:var(--en);
+  font-size:12px;font-weight:600;
+  color:var(--gold-dark);
+  letter-spacing:.45em;text-indent:.45em;
+  margin-bottom:10px;
+}
+.sec-title{
+  font-family:var(--serif);
+  font-weight:600;
+  font-size:clamp(21px,5.8vw,27px);
+  color:var(--brown);
+  line-height:1.8;
+  letter-spacing:.1em;
+}
+.sec-title .em{color:var(--gold-dark);}
+.sec-head::after{
+  content:"";display:block;
+  width:44px;height:1px;
+  background:var(--gold);
+  margin:20px auto 0;
+}
+.sec-lead{
+  text-align:center;font-size:13.5px;color:var(--brown-soft);
+  letter-spacing:.06em;line-height:2.1;
+  margin:-14px 0 32px;
+}
+.photo{
+  overflow:hidden;border-radius:2px;
+  box-shadow:0 10px 30px rgba(74,54,40,.14);
+  margin-bottom:26px;
+}
+.photo img{width:100%;height:auto;}
+
+/* ===== 悩み ===== */
+.nayami{background:#fff;}
+.nayami-list{display:flex;flex-direction:column;}
+.nayami-item{
+  display:flex;align-items:flex-start;gap:14px;
+  padding:17px 4px;
+  border-bottom:1px solid var(--border);
+  font-size:14.5px;font-weight:500;
+  letter-spacing:.04em;line-height:1.8;
+  color:var(--text);
+}
+.nayami-item:first-child{border-top:1px solid var(--border);}
+.nayami-item .mark{
+  flex-shrink:0;
+  width:22px;height:22px;margin-top:4px;
+  border:1px solid var(--gold);
+  display:flex;align-items:center;justify-content:center;
+}
+.nayami-item .mark svg{width:13px;height:13px;}
+.nayami-close{
+  margin-top:34px;
+  text-align:center;
+  background:var(--cream);
+  border:1px solid var(--gold-pale);
+  padding:26px 22px;
+  font-family:var(--serif);
+  font-size:clamp(15px,4.2vw,17px);
+  font-weight:600;letter-spacing:.1em;line-height:2.1;
+  color:var(--brown);
+}
+.nayami-close .em{color:var(--gold-dark);}
+
+/* ===== こだわり ===== */
+.feature{background:var(--cream);}
+.feature-list{display:flex;flex-direction:column;gap:30px;}
+.feature-card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:2px;
+  overflow:hidden;
+  box-shadow:0 8px 26px rgba(74,54,40,.09);
+}
+.feature-photo img{width:100%;height:200px;object-fit:cover;}
+.feature-body{padding:26px 24px 28px;}
+.feature-num{
+  font-family:var(--en);
+  font-size:13px;font-weight:600;
+  color:var(--gold-dark);
+  letter-spacing:.35em;
+  display:flex;align-items:center;gap:12px;
+  margin-bottom:10px;
+}
+.feature-num::after{
+  content:"";flex:1;height:1px;background:var(--gold-pale);
+}
+.feature-body h3{
+  font-family:var(--serif);
+  font-size:18px;font-weight:600;
+  color:var(--brown);line-height:1.7;letter-spacing:.06em;
+  margin-bottom:12px;
+}
+.feature-body p{font-size:14px;color:var(--text);line-height:2.05;}
+
+/* ===== メニュー ===== */
+.menu{background:#fff;}
+.coupon-box{
+  border:1px solid var(--gold);
+  background:linear-gradient(180deg,#fdfaf4,#f9f2e4);
+  padding:28px 22px 26px;
+  margin-bottom:36px;
+  position:relative;
+  text-align:center;
+}
+.coupon-box::before,.coupon-box::after{
+  content:"";position:absolute;
+  width:14px;height:14px;
+  border-color:var(--gold);border-style:solid;
+}
+.coupon-box::before{top:5px;left:5px;border-width:1px 0 0 1px;}
+.coupon-box::after{bottom:5px;right:5px;border-width:0 1px 1px 0;}
+.coupon-label{
+  display:inline-block;
+  background:var(--brown);color:var(--gold-pale);
+  font-size:11px;font-weight:500;
+  letter-spacing:.3em;text-indent:.3em;
+  padding:5px 18px;
+  margin-bottom:18px;
+}
+.coupon-item{
+  padding:14px 0;
+}
+.coupon-item + .coupon-item{border-top:1px dashed var(--gold-pale);}
+.coupon-item .cname{
+  font-family:var(--serif);
+  font-size:15.5px;font-weight:600;color:var(--brown);
+  letter-spacing:.06em;margin-bottom:4px;
+}
+.coupon-item .cprice{
+  font-family:var(--serif);
+  font-size:14px;color:var(--brown-soft);
+}
+.coupon-item .cprice .was{
+  text-decoration:line-through;
+  font-size:.9em;margin-right:10px;color:#a0917d;
+}
+.coupon-item .cprice .now{
+  font-family:var(--en);
+  font-size:26px;font-weight:600;color:var(--gold-dark);
+  letter-spacing:.02em;
+}
+.coupon-item .cprice .yen{font-size:13px;color:var(--gold-dark);font-weight:600;}
+.coupon-note{
+  margin-top:16px;font-size:11px;color:var(--brown-soft);
+  letter-spacing:.06em;line-height:1.9;
+}
+.menu-table{width:100%;border-collapse:collapse;}
+.menu-table caption{
+  caption-side:top;text-align:left;
+  font-family:var(--serif);font-size:15px;font-weight:600;
+  color:var(--brown);letter-spacing:.12em;
+  padding-bottom:12px;
+}
+.menu-table th,.menu-table td{
+  padding:15px 6px;
+  border-bottom:1px solid var(--border);
+  font-size:14px;letter-spacing:.04em;
+  text-align:left;vertical-align:top;font-weight:400;
+}
+.menu-table tr:first-child th,.menu-table tr:first-child td{border-top:1px solid var(--brown);}
+.menu-table td.price{
+  text-align:right;white-space:nowrap;
+  font-family:var(--en);font-size:16px;font-weight:600;
+  color:var(--brown);letter-spacing:.02em;
+}
+.menu-table td.price small{
+  font-family:var(--sans);font-size:11px;font-weight:400;color:var(--brown-soft);
+}
+.menu-table .mnote{display:block;font-size:11.5px;color:var(--brown-soft);line-height:1.7;margin-top:2px;}
+.menu-disc{
+  margin-top:18px;font-size:11px;color:var(--brown-soft);
+  letter-spacing:.06em;line-height:1.9;
+}
+
+/* ===== 流れ ===== */
+.flow{background:var(--cream);}
+.flow-list{display:flex;flex-direction:column;}
+.flow-step{
+  display:flex;gap:18px;position:relative;padding-bottom:30px;
+}
+.flow-step:last-child{padding-bottom:0;}
+.flow-step::before{
+  content:"";position:absolute;left:19px;top:48px;bottom:6px;
+  width:1px;background:var(--gold-pale);
+}
+.flow-step:last-child::before{display:none;}
+.flow-num{
+  width:40px;height:40px;flex-shrink:0;border-radius:50%;
+  background:var(--brown);color:var(--gold-pale);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--en);font-weight:600;font-size:17px;
+  position:relative;z-index:1;
+  border:1px solid var(--gold);
+}
+.flow-body{
+  flex:1;background:#fff;border:1px solid var(--border);
+  border-radius:2px;padding:18px 20px;
+}
+.flow-body h3{
+  font-family:var(--serif);
+  font-size:15.5px;font-weight:600;color:var(--brown);
+  letter-spacing:.06em;margin-bottom:6px;line-height:1.7;
+}
+.flow-body p{font-size:13.5px;line-height:2;color:var(--text);}
+.flow-body .time{
+  display:inline-block;margin-top:8px;
+  font-size:11px;color:var(--gold-dark);
+  border:1px solid var(--gold-pale);
+  padding:2px 12px;letter-spacing:.08em;
+}
+
+/* ===== 声 ===== */
+.voice{background:#fff;}
+.voice-card{
+  background:var(--cream);
+  border:1px solid var(--border);
+  border-radius:2px;
+  padding:24px 22px;
+  margin-bottom:20px;
+}
+.voice-head{display:flex;align-items:center;gap:15px;margin-bottom:12px;}
+.voice-avatar{
+  width:48px;height:48px;flex-shrink:0;border-radius:50%;
+  background:var(--brown);color:var(--gold-pale);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--en);font-weight:600;font-size:19px;
+  border:1px solid var(--gold);
+}
+.voice-avatar.b{background:#7d6650;}
+.voice-avatar.c{background:#5c4a3a;}
+.voice-meta b{display:block;font-size:13.5px;color:var(--brown);font-weight:700;letter-spacing:.04em;}
+.voice-meta span{font-size:11.5px;color:var(--brown-soft);letter-spacing:.04em;}
+.voice-card h3{
+  font-family:var(--serif);
+  font-size:15.5px;font-weight:600;color:var(--gold-dark);
+  line-height:1.75;letter-spacing:.04em;
+  margin-bottom:8px;
+}
+.voice-card p{font-size:13.5px;line-height:2.05;}
+.voice-disc{
+  font-size:11px;color:var(--brown-soft);text-align:center;
+  margin-top:6px;letter-spacing:.06em;
+}
+
+/* ===== Q&A ===== */
+.qa{background:var(--cream);}
+.qa-item{
+  background:#fff;border:1px solid var(--border);
+  border-radius:2px;margin-bottom:14px;overflow:hidden;
+}
+.qa-item summary{
+  list-style:none;cursor:pointer;
+  display:flex;align-items:flex-start;gap:13px;
+  padding:18px;
+  font-family:var(--serif);
+  font-weight:600;font-size:14.5px;color:var(--brown);
+  letter-spacing:.04em;line-height:1.75;
+}
+.qa-item summary::-webkit-details-marker{display:none;}
+.qa-q,.qa-a{
+  width:26px;height:26px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--en);font-weight:600;font-size:14px;
+  margin-top:1px;
+}
+.qa-q{background:var(--brown);color:var(--gold-pale);}
+.qa-a{background:var(--gold);color:#fff;}
+.qa-body{
+  display:flex;gap:13px;padding:0 18px 18px;
+  font-size:13.5px;line-height:2;
+}
+.qa-toggle{
+  margin-left:auto;color:var(--gold-dark);
+  font-weight:400;flex-shrink:0;
+  font-size:18px;line-height:1.4;
+  transition:transform .25s;
+}
+details[open] .qa-toggle{transform:rotate(45deg);}
+
+/* ===== アクセス ===== */
+.access{background:#fff;}
+.access-table{width:100%;border-collapse:collapse;}
+.access-table th,.access-table td{
+  padding:15px 8px;font-size:13.5px;
+  border-bottom:1px solid var(--border);
+  vertical-align:top;text-align:left;
+  letter-spacing:.04em;line-height:1.9;
+}
+.access-table tr:first-child th,.access-table tr:first-child td{border-top:1px solid var(--brown);}
+.access-table th{
+  width:32%;
+  font-family:var(--serif);
+  color:var(--brown);font-weight:600;
+  white-space:nowrap;
+}
+.access-table a{color:var(--gold-dark);font-weight:700;text-decoration:none;}
+.map-box{
+  margin-top:24px;overflow:hidden;border-radius:2px;
+  border:1px solid var(--border);
+  box-shadow:0 8px 24px rgba(74,54,40,.12);
+}
+.map-box iframe{width:100%;height:320px;border:0;}
+
+/* ===== footer ===== */
+.footer{
+  background:var(--brown-deep);
+  color:#b9a88f;
+  padding:44px 0 120px;
+  text-align:center;font-size:11.5px;
+  letter-spacing:.08em;line-height:2.1;
+}
+.footer .f-en{
+  font-family:var(--en);
+  color:var(--gold);font-size:16px;font-weight:600;
+  letter-spacing:.3em;text-indent:.3em;
+  display:block;margin-bottom:2px;
+}
+.footer .f-ja{color:#f5eddd;font-size:12px;display:block;margin-bottom:14px;letter-spacing:.2em;}
+.footer .f-line{
+  width:28px;height:1px;background:var(--gold);
+  margin:0 auto 16px;
+}
+
+/* ===== fixed bottom cta ===== */
+.fixed-cta{
+  position:fixed;left:0;right:0;bottom:0;z-index:200;
+  background:rgba(51,36,26,.97);
+  backdrop-filter:blur(6px);
+  border-top:1px solid rgba(201,162,75,.4);
+  padding:10px 12px calc(10px + env(safe-area-inset-bottom));
+  display:flex;gap:10px;
+}
+.fixed-cta .btn{flex:1;padding:12px 8px;font-size:14px;border-radius:3px;box-shadow:none;}
+.fixed-cta .btn small{font-size:9.5px;}
+.fixed-cta .btn svg{width:18px;height:18px;}
+
+@media(min-width:600px){
+  .cta-btns{flex-direction:row;}
+  .cta-btns .btn{flex:1;}
+  .feature-photo img{height:280px;}
+}
+</style>
+</head>
+<body>
+
+<!-- header -->
+<header class="header">
+  <div class="header-in">
+    <div class="logo">
+      <span class="en">HAIR SALON SHITTORU</span>
+      <span class="ja">ヘアサロン しっとる｜岡山駅 徒歩5分</span>
+    </div>
+    <a class="header-tel" href="tel:0862000000">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+      予約
+    </a>
+  </div>
+</header>
+
+<!-- ===== 1. FV ===== -->
+<div class="hero">
+  <div class="hero-in">
+    <p class="hero-en">HAIR SALON SHITTORU</p>
+    <h1>髪が変わると、<br>印象が変わる。</h1>
+    <p class="hero-sub">大人の女性のための、髪質改善を目指す<br>マンツーマンの隠れ家サロン</p>
+    <p class="hero-salon">完全予約制｜岡山駅 徒歩約5分</p>
+  </div>
+  <div class="hero-coupon">
+    <p class="cp-label">FIRST VISIT</p>
+    <p class="cp-main">新規限定｜カット＋カラー <span class="was">13,200円</span><span class="price">9,900</span>円<small>（税込）</small></p>
+    <p class="cp-sub">カット＋髪質改善トリートメント 15,400円 → 11,000円（税込）</p>
+  </div>
+</div>
+
+<!-- ===== 2. CTA ===== -->
+<div class="cta">
+  <div class="wrap">
+    <p class="cta-title">ご予約・ご相談はこちらから</p>
+    <p class="cta-note">「髪の悩みを相談してから決めたい」だけでも、お気軽にどうぞ。</p>
+    <div class="cta-btns">
+      <a class="btn btn-line" href="#" onclick="alert('仮リンクです（本番でLINE URLを設定）');return false;">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 5.7 2 10.2c0 4 3.4 7.4 8 8.1.3.1.7.2.8.5.1.2.1.6 0 .8l-.1.8c0 .2-.2.9.8.5s5.2-3.1 7.1-5.3C20.4 13.9 22 12.2 22 10.2 22 5.7 17.5 2 12 2z"/></svg>
+        <span class="btn-inner">LINEで予約する<small>24時間受付・空き状況もご案内</small></span>
+        <span class="arrow"></span>
+      </a>
+      <a class="btn btn-gold" href="tel:0862000000">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+        <span class="btn-inner"><span class="btn-tel-num">086-200-0000</span><small>受付 10:00〜19:00（月曜定休）</small></span>
+        <span class="arrow"></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 3. 悩み共感 ===== -->
+<section class="nayami">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-en">CONCERNS</p>
+      <h2 class="sec-title">こんなお悩み、<br>ありませんか？</h2>
+    </div>
+    <div class="nayami-list">
+      <div class="nayami-item"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#c9a24b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span>サロンに行っても、いつも同じような髪型になってしまう</div>
+      <div class="nayami-item"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#c9a24b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span>「こうしたい」がうまく伝わらず、仕上がりに妥協している</div>
+      <div class="nayami-item"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#c9a24b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span>カラーの色持ちが悪く、すぐに退色してしまう</div>
+      <div class="nayami-item"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#c9a24b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span>くせ毛やうねり、広がりで朝のスタイリングに時間がかかる</div>
+      <div class="nayami-item"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#c9a24b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span>年齢とともに髪のハリ・ツヤが変わってきた気がする</div>
+      <div class="nayami-item"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#c9a24b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span>次々とサロンを変えては合わず、「サロン選び」自体に疲れた</div>
+    </div>
+    <div class="nayami-close">
+      その髪の悩み、<span class="em">あなたの髪質に合わせた施術</span>で<br>
+      「扱いやすい髪」を目指しませんか。
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4. 当サロンのこだわり ===== -->
+<section class="feature">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-en">OUR PROMISE</p>
+      <h2 class="sec-title">SHITTORUの<br><span class="em">4つのこだわり</span></h2>
+    </div>
+    <p class="sec-lead">大きなサロンにはできない、<br>小さな隠れ家サロンだからこその丁寧さを。</p>
+    <div class="feature-list">
+
+      <div class="feature-card">
+        <div class="feature-photo"><img src="images/interior.jpg" alt="白を基調とした落ち着いたサロン内観" loading="lazy"></div>
+        <div class="feature-body">
+          <p class="feature-num">01</p>
+          <h3>マンツーマン施術。<br>最初から最後まで、代表スタイリストが担当</h3>
+          <p>カウンセリングからシャンプー、カット、仕上げまで、すべて代表スタイリストがひとりで担当します。途中で担当が替わることがないため、細かなニュアンスまで伝わりやすく、回を重ねるほど「言わなくても伝わる」関係を築けます。</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-body">
+          <p class="feature-num">02</p>
+          <h3>骨格・髪質診断カウンセリングに20分</h3>
+          <p>初回は施術の前に、約20分かけて骨格・毛流・髪質・ライフスタイルを丁寧に伺います。「なりたいイメージ」と「扱いやすさ」の両方から、あなたに似合うスタイルをご提案。写真の持ち込みも大歓迎です。</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-photo"><img src="images/blow.jpg" alt="髪の状態を確かめながら丁寧にブローする様子" loading="lazy"></div>
+        <div class="feature-body">
+          <p class="feature-num">03</p>
+          <h3>髪のダメージと向き合う「髪質改善メニュー」</h3>
+          <p>くせ・うねり・パサつきなど、大人の髪の変化に合わせた髪質改善トリートメントをご用意。髪の状態を見極めて薬剤と工程を調整し、指どおりのよい、扱いやすい髪を目指します。ご自宅でのケア方法も具体的にお伝えします。</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-body">
+          <p class="feature-num">04</p>
+          <h3>次回予約を急かしません</h3>
+          <p>お帰りの際に次回予約やコース契約をおすすめすることはありません。「また来たい」と思っていただけたときに、あなたのペースでご予約ください。静かに長くお付き合いできるサロンでありたいと考えています。</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5. メニュー・料金 ===== -->
+<section class="menu">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-en">MENU &amp; PRICE</p>
+      <h2 class="sec-title">メニュー・料金</h2>
+    </div>
+
+    <div class="coupon-box">
+      <span class="coupon-label">新規限定クーポン</span>
+      <div class="coupon-item">
+        <p class="cname">カット ＋ カラー</p>
+        <p class="cprice"><span class="was">通常 13,200円</span><span class="now">9,900</span><span class="yen">円（税込）</span></p>
+      </div>
+      <div class="coupon-item">
+        <p class="cname">カット ＋ 髪質改善トリートメント</p>
+        <p class="cprice"><span class="was">通常 15,400円</span><span class="now">11,000</span><span class="yen">円（税込）</span></p>
+      </div>
+      <p class="coupon-note">※初めてご来店の方限定・お一人さま1回まで。<br>ご予約時に「LPのクーポンを見た」とお伝えください。</p>
+    </div>
+
+    <table class="menu-table">
+      <caption>通常メニュー（すべて税込）</caption>
+      <tr>
+        <td>カット<span class="mnote">シャンプー・ブロー込み</span></td>
+        <td class="price">5,500<small> 円</small></td>
+      </tr>
+      <tr>
+        <td>カット ＋ カラー<span class="mnote">リタッチ・フルカラー同料金</span></td>
+        <td class="price">13,200<small> 円</small></td>
+      </tr>
+      <tr>
+        <td>髪質改善トリートメント<span class="mnote">髪の状態に合わせて薬剤を調整</span></td>
+        <td class="price">9,900<small> 円</small></td>
+      </tr>
+      <tr>
+        <td>カット ＋ 髪質改善トリートメント</td>
+        <td class="price">15,400<small> 円</small></td>
+      </tr>
+      <tr>
+        <td>縮毛矯正<span class="mnote">カット込み・ロング料金なし</span></td>
+        <td class="price">16,500<small> 円</small></td>
+      </tr>
+      <tr>
+        <td>パーマ<span class="mnote">カット・ブロー込み</span></td>
+        <td class="price">12,100<small> 円</small></td>
+      </tr>
+    </table>
+    <p class="menu-disc">※価格はサンプルです。髪の長さ・状態により追加料金をいただく場合は、施術前に必ずご説明します。</p>
+  </div>
+</section>
+
+<!-- ===== 6. 中間CTA ===== -->
+<div class="cta cta-dark">
+  <div class="wrap">
+    <p class="cta-title">髪の悩みを、そのままお聞かせください</p>
+    <p class="cta-note">写真を送っていただければ、LINEでメニュー選びのご相談も承ります。</p>
+    <div class="cta-btns">
+      <a class="btn btn-line" href="#" onclick="alert('仮リンクです（本番でLINE URLを設定）');return false;">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 5.7 2 10.2c0 4 3.4 7.4 8 8.1.3.1.7.2.8.5.1.2.1.6 0 .8l-.1.8c0 .2-.2.9.8.5s5.2-3.1 7.1-5.3C20.4 13.9 22 12.2 22 10.2 22 5.7 17.5 2 12 2z"/></svg>
+        <span class="btn-inner">LINEで予約する<small>24時間受付</small></span>
+        <span class="arrow"></span>
+      </a>
+      <a class="btn btn-gold" href="tel:0862000000">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+        <span class="btn-inner"><span class="btn-tel-num">086-200-0000</span><small>受付 10:00〜19:00（月曜定休）</small></span>
+        <span class="arrow"></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 7. ご来店の流れ ===== -->
+<section class="flow">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-en">FLOW</p>
+      <h2 class="sec-title">ご来店の流れ</h2>
+    </div>
+    <div class="photo"><img src="images/style2.jpg" alt="カウンセリングをもとに丁寧に進めるカーラー施術" loading="lazy"></div>
+    <div class="flow-list">
+      <div class="flow-step">
+        <div class="flow-num">1</div>
+        <div class="flow-body">
+          <h3>LINEまたはお電話でご予約</h3>
+          <p>ご希望の日時とメニューをお知らせください。メニューに迷ったら「相談して決めたい」で大丈夫です。完全予約制のため、他のお客様と重なることはありません。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">2</div>
+        <div class="flow-body">
+          <h3>カウンセリング（約20分）</h3>
+          <p>骨格・毛流・髪質・普段のお手入れを丁寧に確認しながら、なりたいイメージを伺います。当日のメニュー変更も、料金をご説明のうえで対応します。</p>
+          <span class="time">初回目安 約20分</span>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">3</div>
+        <div class="flow-body">
+          <h3>マンツーマンで施術</h3>
+          <p>シャンプーから仕上げまで代表スタイリストがひとりで担当。静かな空間で、会話量もお好みに合わせます。「そっとしておいてほしい」もお気軽にどうぞ。</p>
+          <span class="time">カット＋カラー目安 約2時間30分</span>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">4</div>
+        <div class="flow-body">
+          <h3>仕上げ・ご自宅ケアのご案内</h3>
+          <p>再現しやすいスタイリングのコツと、ご自宅でのケア方法を具体的にお伝えします。次回予約のおすすめはいたしません。あなたのペースでまたお越しください。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 8. お客様の声 ===== -->
+<section class="voice">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-en">VOICE</p>
+      <h2 class="sec-title">お客様の声</h2>
+    </div>
+    <div class="photo"><img src="images/style1.jpg" alt="仕上がりに満足して微笑む女性" loading="lazy"></div>
+
+    <div class="voice-card">
+      <div class="voice-head">
+        <div class="voice-avatar">M</div>
+        <div class="voice-meta">
+          <b>40代・女性</b>
+          <span>カット＋髪質改善トリートメント</span>
+        </div>
+      </div>
+      <h3>朝の髪の広がりが落ち着いて、スタイリングが楽になりました。</h3>
+      <p>年齢とともにうねりが強くなり、毎朝アイロンが手放せませんでした。カウンセリングで髪の状態を丁寧に見てもらい、トリートメントとカットの両方から提案してもらえたのが良かったです。手ぐしでまとまる日が増えて、朝の時間に余裕ができました。</p>
+    </div>
+
+    <div class="voice-card">
+      <div class="voice-head">
+        <div class="voice-avatar b">Y</div>
+        <div class="voice-meta">
+          <b>50代・女性</b>
+          <span>カット＋カラー</span>
+        </div>
+      </div>
+      <h3>「いつも同じ髪型」から、やっと抜け出せました。</h3>
+      <p>どこへ行っても似たような仕上がりで、正直サロン選びに疲れていました。ここは最初のカウンセリングで骨格や毛流まで見てくれて、「だからこの髪型が扱いやすい」と理由まで説明してくれます。マンツーマンなので周りを気にせず相談できるのもありがたいです。</p>
+    </div>
+
+    <div class="voice-card">
+      <div class="voice-head">
+        <div class="voice-avatar c">K</div>
+        <div class="voice-meta">
+          <b>30代・女性</b>
+          <span>カット＋カラー</span>
+        </div>
+      </div>
+      <h3>カラーの色持ちが変わり、通う間隔にゆとりが出ました。</h3>
+      <p>退色の早さが悩みでしたが、髪の状態に合わせて薬剤を選んでくれて、自宅でのケア方法まで具体的に教えてもらえました。次回予約をすすめられないのも自分のペースで通えて気楽です。静かな空間で、施術の時間そのものが息抜きになっています。</p>
+    </div>
+
+    <p class="voice-disc">※個人の感想であり、感じ方には個人差があります。（掲載内容はサンプルです）</p>
+  </div>
+</section>
+
+<!-- ===== 9. Q&A ===== -->
+<section class="qa">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-en">Q &amp; A</p>
+      <h2 class="sec-title">よくあるご質問</h2>
+    </div>
+
+    <details class="qa-item" open>
+      <summary><span class="qa-q">Q</span>駐車場はありますか？<span class="qa-toggle">＋</span></summary>
+      <div class="qa-body"><span class="qa-a">A</span><p>専用駐車場はございませんが、ビル周辺に複数のコインパーキングがあります。ご予約時にお伝えいただければ、近くの駐車場をご案内します。JR岡山駅から徒歩約5分のため、電車でのご来店も便利です。</p></div>
+    </details>
+
+    <details class="qa-item">
+      <summary><span class="qa-q">Q</span>子ども連れでも大丈夫ですか？<span class="qa-toggle">＋</span></summary>
+      <div class="qa-body"><span class="qa-a">A</span><p>マンツーマンの完全予約制のため、他のお客様に気兼ねなくお子さま連れでご来店いただけます。ベビーカーのままお入りいただけますので、ご予約時にお申し付けください。</p></div>
+    </details>
+
+    <details class="qa-item">
+      <summary><span class="qa-q">Q</span>男性でも利用できますか？<span class="qa-toggle">＋</span></summary>
+      <div class="qa-body"><span class="qa-a">A</span><p>はい、ご利用いただけます。大人女性のお客様が中心のサロンですが、男性のカット・髪質改善メニューにも対応しています。マンツーマンですので、周りを気にせず落ち着いてお過ごしいただけます。</p></div>
+    </details>
+
+    <details class="qa-item">
+      <summary><span class="qa-q">Q</span>施術にはどのくらい時間がかかりますか？<span class="qa-toggle">＋</span></summary>
+      <div class="qa-body"><span class="qa-a">A</span><p>目安として、カットは約1時間、カット＋カラーは約2時間30分、カット＋髪質改善トリートメントは約2時間30分〜3時間です。初回はカウンセリングに約20分いただきますので、少し余裕をもってお越しください。</p></div>
+    </details>
+
+    <details class="qa-item">
+      <summary><span class="qa-q">Q</span>支払い方法は何が使えますか？<span class="qa-toggle">＋</span></summary>
+      <div class="qa-body"><span class="qa-a">A</span><p>現金のほか、各種クレジットカード・QRコード決済（PayPayなど）・交通系ICカードがご利用いただけます。ご不明な点はご予約時にお問い合わせください。</p></div>
+    </details>
+  </div>
+</section>
+
+<!-- ===== 10. アクセス ===== -->
+<section class="access">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-en">ACCESS</p>
+      <h2 class="sec-title">サロン情報・アクセス</h2>
+    </div>
+    <table class="access-table">
+      <tr><th>店名</th><td>Hair Salon SHITTORU<br>（ヘアサロン しっとる）</td></tr>
+      <tr><th>住所</th><td>〒700-0901<br>岡山県岡山市北区本町6-36<br>第一セントラルビル4階</td></tr>
+      <tr><th>アクセス</th><td>JR「岡山駅」より徒歩約5分</td></tr>
+      <tr><th>電話</th><td><a href="tel:0862000000">086-200-0000</a></td></tr>
+      <tr><th>営業時間</th><td>10:00〜19:00<br><small style="color:var(--brown-soft);">最終受付：カット 18:00／カラー 17:00</small></td></tr>
+      <tr><th>定休日</th><td>月曜日</td></tr>
+      <tr><th>予約</th><td>完全予約制（マンツーマン施術）</td></tr>
+    </table>
+    <div class="map-box">
+      <iframe src="https://maps.google.com/maps?q=%E5%B2%A1%E5%B1%B1%E7%9C%8C%E5%B2%A1%E5%B1%B1%E5%B8%82%E5%8C%97%E5%8C%BA%E6%9C%AC%E7%94%BA6-36%20%E7%AC%AC%E4%B8%80%E3%82%BB%E3%83%B3%E3%83%88%E3%83%A9%E3%83%AB%E3%83%93%E3%83%AB&z=17&output=embed" loading="lazy" title="Hair Salon SHITTORUの地図" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 11. 最終CTA ===== -->
+<div class="cta cta-dark">
+  <div class="wrap">
+    <p class="cta-title">静かな空間で、<br>あなたの髪とゆっくり向き合う時間を。</p>
+    <p class="cta-note">新規限定クーポンは、ご予約時に「LPを見た」とお伝えください。</p>
+    <div class="cta-btns">
+      <a class="btn btn-line" href="#" onclick="alert('仮リンクです（本番でLINE URLを設定）');return false;">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 5.7 2 10.2c0 4 3.4 7.4 8 8.1.3.1.7.2.8.5.1.2.1.6 0 .8l-.1.8c0 .2-.2.9.8.5s5.2-3.1 7.1-5.3C20.4 13.9 22 12.2 22 10.2 22 5.7 17.5 2 12 2z"/></svg>
+        <span class="btn-inner">LINEで予約する<small>24時間受付</small></span>
+        <span class="arrow"></span>
+      </a>
+      <a class="btn btn-gold" href="tel:0862000000">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+        <span class="btn-inner"><span class="btn-tel-num">086-200-0000</span><small>受付 10:00〜19:00（月曜定休）</small></span>
+        <span class="arrow"></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="wrap">
+    <span class="f-en">HAIR SALON SHITTORU</span>
+    <span class="f-ja">ヘアサロン しっとる</span>
+    <div class="f-line"></div>
+    〒700-0901 岡山県岡山市北区本町6-36 第一セントラルビル4階<br>
+    運営：株式会社しっとる<br><br>
+    © Hair Salon SHITTORU
+  </div>
+</footer>
+
+<!-- fixed bottom CTA -->
+<div class="fixed-cta">
+  <a class="btn btn-line" href="#" onclick="alert('仮リンクです（本番でLINE URLを設定）');return false;">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 5.7 2 10.2c0 4 3.4 7.4 8 8.1.3.1.7.2.8.5.1.2.1.6 0 .8l-.1.8c0 .2-.2.9.8.5s5.2-3.1 7.1-5.3C20.4 13.9 22 12.2 22 10.2 22 5.7 17.5 2 12 2z"/></svg>
+    <span class="btn-inner">LINE予約<small>24時間受付</small></span>
+  </a>
+  <a class="btn btn-gold" href="tel:0862000000">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+    <span class="btn-inner">電話予約<small>〜19:00受付</small></span>
+  </a>
+</div>
+
+</body>
+</html>

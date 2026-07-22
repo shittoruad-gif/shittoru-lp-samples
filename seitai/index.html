@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>慢性腰痛・肩こり専門の整体｜しっとる整体院【初回2,980円】岡山駅徒歩5分</title>
+<meta name="description" content="岡山市北区・岡山駅徒歩約5分。慢性腰痛・肩こり・デスクワークの姿勢の悩み専門の整体院。丁寧なカウンセリングとソフトな施術で、つらさの軽減と再発しにくい体づくりを目指します。初回体験2,980円（税込）・完全予約制・夜21時まで受付。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Shippori+Mincho:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#2e5e4e;
+  --green-deep:#1f4438;
+  --green-pale:#e7efe9;
+  --beige:#f6f1e7;
+  --beige-deep:#efe7d6;
+  --brown:#8a6d4a;
+  --brown-deep:#6e5537;
+  --line-c:#e0d7c5;
+  --text:#33302a;
+  --line-green:#06c755;
+  --line-green-dark:#04a344;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Noto Sans JP',sans-serif;
+  color:var(--text);
+  background:#fffdf8;
+  line-height:1.9;
+  font-size:16px;
+  overflow-x:hidden;
+}
+img,svg,iframe{max-width:100%;display:block;}
+.wrap{max-width:680px;margin:0 auto;padding:0 20px;}
+.mincho{font-family:'Shippori Mincho',serif;}
+
+/* ===== header ===== */
+.header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(255,253,248,.95);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line-c);
+}
+.header-in{
+  max-width:680px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:10px 16px;
+}
+.logo{display:flex;flex-direction:column;line-height:1.35;}
+.logo b{
+  font-family:'Shippori Mincho',serif;
+  font-size:19px;color:var(--green-deep);letter-spacing:.12em;font-weight:700;
+}
+.logo span{font-size:10px;color:#9a8f7a;letter-spacing:.14em;}
+.header-tel{
+  display:flex;align-items:center;gap:7px;
+  background:var(--green);color:#fff;
+  padding:8px 15px;border-radius:999px;
+  text-decoration:none;font-weight:700;font-size:13px;
+  letter-spacing:.05em;
+  box-shadow:0 3px 8px rgba(46,94,78,.3);
+}
+.header-tel svg{width:15px;height:15px;}
+
+/* ===== hero ===== */
+.hero{
+  position:relative;
+  background:url("images/hero.jpg") center 35%/cover no-repeat;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(246,241,231,.55) 0%,rgba(246,241,231,.25) 40%,rgba(246,241,231,.62) 74%,var(--beige) 97%);
+}
+.hero-in{
+  position:relative;z-index:2;
+  max-width:680px;margin:0 auto;
+  padding:36px 20px 30px;
+  text-align:center;
+}
+.hero-lead{
+  display:inline-flex;align-items:center;gap:10px;
+  color:var(--green-deep);
+  font-family:'Shippori Mincho',serif;
+  font-weight:700;font-size:14px;letter-spacing:.22em;
+  margin-bottom:14px;
+  text-shadow:1px 1px 0 #fff,-1px 1px 0 #fff,1px -1px 0 #fff,-1px -1px 0 #fff;
+}
+.hero-lead::before,.hero-lead::after{
+  content:"";width:26px;height:1px;background:var(--green-deep);
+}
+.hero h1{
+  font-family:'Shippori Mincho',serif;
+  font-size:clamp(26px,7.2vw,40px);
+  font-weight:800;
+  color:var(--green-deep);
+  line-height:1.6;
+  letter-spacing:.06em;
+  text-shadow:2px 2px 0 #fff,-2px 2px 0 #fff,2px -2px 0 #fff,-2px -2px 0 #fff,0 0 14px rgba(255,255,255,.95);
+}
+.hero h1 .em{
+  color:var(--brown-deep);
+  background:linear-gradient(transparent 68%,rgba(255,255,255,.0) 68%);
+}
+.hero-sub{
+  margin-top:12px;
+  font-size:clamp(13.5px,3.8vw,16px);
+  font-weight:700;color:#4c4436;
+  letter-spacing:.06em;
+  text-shadow:1px 1px 0 #fff,-1px 1px 0 #fff,1px -1px 0 #fff,-1px -1px 0 #fff,0 0 10px rgba(255,255,255,.9);
+}
+.hero-offer{
+  margin:22px auto 0;
+  display:inline-block;
+  background:#fff;
+  border:1px solid var(--line-c);
+  border-top:4px solid var(--green);
+  border-radius:4px;
+  padding:14px 34px 16px;
+  box-shadow:0 10px 26px rgba(70,60,40,.18);
+}
+.hero-offer .ol{
+  font-size:12.5px;font-weight:700;color:var(--green-deep);
+  letter-spacing:.14em;
+}
+.hero-offer .op{
+  display:flex;align-items:baseline;justify-content:center;gap:10px;
+  line-height:1.2;margin-top:4px;
+}
+.hero-offer .op .was{
+  font-size:14px;color:#9a8f7a;font-weight:500;
+  text-decoration:line-through;
+}
+.hero-offer .op .now{
+  font-family:'Shippori Mincho',serif;
+  font-size:44px;font-weight:800;color:var(--brown-deep);
+  letter-spacing:.02em;
+}
+.hero-offer .op .now small{font-size:18px;}
+.hero-offer .on{font-size:11px;color:#9a8f7a;margin-top:2px;}
+.hero-badges{
+  display:flex;justify-content:center;gap:10px;margin-top:22px;flex-wrap:wrap;
+}
+.hero-badge{
+  width:94px;height:94px;border-radius:50%;
+  background:rgba(255,255,255,.95);
+  border:1.5px solid var(--green);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  font-size:11px;font-weight:700;color:var(--green-deep);
+  text-align:center;line-height:1.45;letter-spacing:.03em;
+  box-shadow:0 4px 12px rgba(70,60,40,.14);
+}
+.hero-badge b{
+  font-family:'Shippori Mincho',serif;
+  font-size:16px;color:var(--brown-deep);font-weight:800;
+}
+.hero-note{
+  position:relative;z-index:2;
+  background:var(--green-deep);
+  color:#cfe0d6;font-size:11px;letter-spacing:.04em;
+  text-align:center;padding:8px 16px;
+}
+
+/* ===== CTA ===== */
+.cta{
+  background:var(--beige);
+  border-top:1px solid var(--line-c);border-bottom:1px solid var(--line-c);
+  padding:32px 0 36px;
+}
+.cta-strong{
+  background:linear-gradient(180deg,var(--green),var(--green-deep));
+  border:none;
+}
+.cta-strong .cta-title{color:#fff;}
+.cta-strong .cta-note{color:#b8d0c2;}
+.cta-title{
+  font-family:'Shippori Mincho',serif;
+  text-align:center;font-weight:800;
+  font-size:clamp(18px,5vw,22px);color:var(--green-deep);
+  letter-spacing:.08em;
+  margin-bottom:6px;line-height:1.6;
+}
+.cta-note{text-align:center;font-size:12px;color:#8d8168;margin-bottom:18px;letter-spacing:.03em;}
+.cta-btns{display:flex;flex-direction:column;gap:12px;max-width:480px;margin:0 auto;}
+.btn{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  border-radius:10px;text-decoration:none;
+  font-weight:900;padding:16px 20px;
+  font-size:17px;letter-spacing:.04em;
+  transition:transform .15s ease;
+  position:relative;
+}
+.btn:active{transform:scale(.97);}
+.btn svg{width:24px;height:24px;flex-shrink:0;}
+.btn-line{
+  background:linear-gradient(180deg,var(--line-green),var(--line-green-dark));
+  color:#fff;
+  box-shadow:0 5px 0 #038a3a,0 10px 20px rgba(4,163,68,.32);
+}
+.btn-tel{
+  background:linear-gradient(180deg,#9d7f58,var(--brown));
+  color:#fff;
+  box-shadow:0 5px 0 #57431f,0 10px 20px rgba(138,109,74,.35);
+}
+.btn small{display:block;font-size:11px;font-weight:500;opacity:.92;}
+.btn .btn-inner{display:flex;flex-direction:column;align-items:flex-start;line-height:1.35;}
+.btn .arrow{
+  position:absolute;right:16px;top:50%;
+  width:9px;height:9px;
+  border-top:2.5px solid rgba(255,255,255,.9);border-right:2.5px solid rgba(255,255,255,.9);
+  transform:translateY(-50%) rotate(45deg);
+}
+.cta-tel-num{font-size:21px;letter-spacing:.02em;}
+
+/* ===== sections ===== */
+section{padding:60px 0;}
+.sec-label{
+  text-align:center;font-size:11px;font-weight:700;
+  color:var(--brown);letter-spacing:.35em;margin-bottom:8px;
+}
+.sec-title{
+  font-family:'Shippori Mincho',serif;
+  text-align:center;font-weight:800;
+  font-size:clamp(21px,5.8vw,29px);
+  color:var(--green-deep);line-height:1.65;
+  letter-spacing:.06em;
+  margin-bottom:14px;
+}
+.sec-title .em{color:var(--brown-deep);}
+.sec-title::after{
+  content:"";display:block;
+  width:44px;height:2px;background:var(--brown);
+  margin:16px auto 0;
+}
+.sec-title.no-bar::after{display:none;}
+.sec-intro{
+  text-align:center;font-size:14px;color:#6b6250;
+  margin-bottom:26px;letter-spacing:.02em;
+}
+.photo{
+  border-radius:4px;overflow:hidden;
+  box-shadow:0 8px 22px rgba(70,60,40,.16);
+  margin-bottom:24px;
+  position:relative;
+}
+.photo::after{
+  content:"";position:absolute;inset:8px;
+  border:1px solid rgba(255,255,255,.55);
+  border-radius:2px;pointer-events:none;
+}
+.photo img{width:100%;height:auto;}
+
+/* 悩み */
+.nayami{background:var(--beige);}
+.nayami-list{display:flex;flex-direction:column;gap:0;margin-bottom:26px;background:#fff;border:1px solid var(--line-c);border-radius:4px;overflow:hidden;box-shadow:0 4px 14px rgba(70,60,40,.08);}
+.nayami-item{
+  padding:15px 18px;
+  display:flex;align-items:flex-start;gap:13px;
+  font-weight:700;font-size:14.5px;line-height:1.75;
+  border-bottom:1px dashed var(--line-c);
+}
+.nayami-item:last-child{border-bottom:none;}
+.nayami-item .chk{
+  width:24px;height:24px;flex-shrink:0;border-radius:50%;
+  background:var(--green);display:flex;align-items:center;justify-content:center;
+  margin-top:3px;
+}
+.nayami-item .chk svg{width:14px;height:14px;}
+.nayami-close{
+  text-align:center;
+  font-family:'Shippori Mincho',serif;
+  font-weight:800;
+  font-size:clamp(16px,4.5vw,20px);color:var(--green-deep);
+  background:#fff;
+  border:1px solid var(--line-c);
+  border-left:4px solid var(--brown);
+  border-right:4px solid var(--brown);
+  border-radius:4px;padding:20px 16px;line-height:1.9;
+  letter-spacing:.05em;
+}
+.nayami-close .em{color:var(--brown-deep);}
+
+/* 原因 */
+.cause{background:var(--green-deep);color:#eef4ef;}
+.cause .sec-label{color:#c9b48f;}
+.cause .sec-title{color:#fff;}
+.cause .sec-title::after{background:#c9b48f;}
+.cause-lead{
+  text-align:center;
+  font-family:'Shippori Mincho',serif;
+  font-size:clamp(16px,4.6vw,20px);
+  font-weight:700;color:#fff;line-height:2;
+  letter-spacing:.06em;
+  margin-bottom:24px;
+}
+.cause-lead .em{
+  color:#e8cf9e;
+  border-bottom:1px solid rgba(232,207,158,.6);
+  padding-bottom:2px;
+}
+.cause-box{
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:4px;padding:22px 20px;
+  font-size:14.5px;color:#dbe6de;
+  margin-bottom:14px;
+}
+.cause-box h3{
+  font-family:'Shippori Mincho',serif;
+  font-size:16.5px;color:#e8cf9e;font-weight:700;
+  letter-spacing:.06em;
+  margin-bottom:8px;
+  display:flex;align-items:center;gap:10px;
+}
+.cause-box h3::before{
+  content:"";width:14px;height:1px;background:#e8cf9e;flex-shrink:0;
+}
+.cause-box b{color:#fff;}
+.cause-point{
+  background:#fff;
+  border-radius:4px;padding:20px 20px;
+  font-size:15px;color:var(--text);
+  border-top:3px solid var(--brown);
+  box-shadow:0 8px 22px rgba(0,0,0,.25);
+}
+.cause-point b{color:var(--green-deep);}
+
+/* 選ばれる理由 */
+.feature-list{display:flex;flex-direction:column;gap:20px;}
+.feature{
+  background:#fff;border:1px solid var(--line-c);border-radius:4px;
+  overflow:hidden;box-shadow:0 5px 16px rgba(70,60,40,.09);
+}
+.feature-photo{position:relative;}
+.feature-photo img{width:100%;height:195px;object-fit:cover;}
+.feature-head{
+  display:flex;align-items:center;gap:14px;
+  padding:16px 18px 12px;
+}
+.feature-num{
+  font-family:'Shippori Mincho',serif;
+  font-size:26px;font-weight:800;color:var(--brown);
+  line-height:1;flex-shrink:0;
+  border-bottom:2px solid var(--brown);
+  padding-bottom:4px;
+}
+.feature-head h3{
+  font-family:'Shippori Mincho',serif;
+  font-size:17px;color:var(--green-deep);line-height:1.6;
+  font-weight:700;letter-spacing:.04em;
+}
+.feature-body{padding:0 18px 18px;font-size:14px;color:#4c4536;}
+
+/* 流れ */
+.flow{background:var(--beige);}
+.flow-list{display:flex;flex-direction:column;}
+.flow-step{
+  display:flex;gap:16px;position:relative;padding-bottom:26px;
+}
+.flow-step:last-child{padding-bottom:0;}
+.flow-step::before{
+  content:"";position:absolute;left:21px;top:48px;bottom:4px;
+  width:1px;background:#cbbfa4;
+}
+.flow-step:last-child::before{display:none;}
+.flow-num{
+  width:44px;height:44px;flex-shrink:0;border-radius:50%;
+  background:var(--green);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Shippori Mincho',serif;font-weight:800;font-size:19px;
+  position:relative;z-index:1;
+  box-shadow:0 3px 8px rgba(46,94,78,.3);
+}
+.flow-body{flex:1;background:#fff;border-radius:4px;padding:15px 17px;border:1px solid var(--line-c);}
+.flow-body h3{
+  font-family:'Shippori Mincho',serif;
+  font-size:16px;color:var(--green-deep);margin-bottom:5px;
+  font-weight:700;letter-spacing:.04em;
+}
+.flow-body p{font-size:14px;color:#4c4536;}
+.flow-body .tip{
+  margin-top:10px;font-size:12px;background:var(--beige);border-radius:4px;
+  padding:8px 12px;color:var(--brown-deep);border:1px dashed #cbbfa4;
+}
+
+/* 料金 */
+.price-table{
+  width:100%;border-collapse:collapse;background:#fff;
+  border:1px solid var(--line-c);border-radius:4px;overflow:hidden;
+  box-shadow:0 5px 16px rgba(70,60,40,.09);
+}
+.price-table th,.price-table td{
+  padding:16px 16px;border-bottom:1px solid var(--line-c);
+  text-align:left;vertical-align:middle;font-size:14.5px;
+}
+.price-table tr:last-child th,.price-table tr:last-child td{border-bottom:none;}
+.price-table th{
+  width:52%;background:#faf6ec;color:var(--green-deep);font-weight:700;
+}
+.price-table th small{display:block;font-size:11.5px;font-weight:500;color:#8d8168;line-height:1.6;margin-top:2px;}
+.price-table td{
+  font-family:'Shippori Mincho',serif;
+  font-weight:800;font-size:20px;color:var(--text);
+  white-space:nowrap;
+}
+.price-table td small{font-size:12px;font-weight:500;color:#8d8168;font-family:'Noto Sans JP',sans-serif;}
+.price-table .hl th{background:var(--green);color:#fff;}
+.price-table .hl th small{color:#cfe0d6;}
+.price-table .hl td{background:#f2f7f3;color:var(--brown-deep);font-size:24px;}
+.price-table .hl td .was{
+  display:block;font-size:12px;color:#9a8f7a;font-weight:500;
+  text-decoration:line-through;font-family:'Noto Sans JP',sans-serif;
+}
+.price-note{font-size:12px;color:#8d8168;margin-top:12px;line-height:1.8;}
+
+/* 声 */
+.voice{background:var(--beige);}
+.voice-card{
+  background:#fff;border-radius:4px;padding:22px 20px;
+  border:1px solid var(--line-c);
+  border-top:3px solid var(--green);
+  margin-bottom:16px;
+  box-shadow:0 5px 14px rgba(70,60,40,.08);
+}
+.voice-head{display:flex;align-items:center;gap:14px;margin-bottom:12px;}
+.voice-avatar{
+  width:52px;height:52px;flex-shrink:0;border-radius:50%;
+  background:var(--green);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Shippori Mincho',serif;font-weight:800;font-size:21px;
+}
+.voice-avatar.b{background:var(--brown);}
+.voice-avatar.c{background:#5a7a68;}
+.voice-meta b{display:block;font-size:14.5px;color:var(--green-deep);}
+.voice-meta span{font-size:12px;color:#8d8168;}
+.voice-card h3{
+  font-family:'Shippori Mincho',serif;
+  font-size:16px;color:var(--brown-deep);margin-bottom:8px;line-height:1.65;
+  font-weight:700;letter-spacing:.03em;
+}
+.voice-card p{font-size:14px;color:#4c4536;}
+.voice-disc{font-size:11px;color:#8d8168;text-align:center;margin-top:8px;line-height:1.8;}
+
+/* Q&A */
+.qa-item{
+  background:#fff;border:1px solid var(--line-c);border-radius:4px;
+  margin-bottom:12px;overflow:hidden;
+}
+.qa-item summary{
+  list-style:none;cursor:pointer;
+  display:flex;align-items:flex-start;gap:12px;
+  padding:16px;font-weight:700;font-size:15px;color:var(--green-deep);
+  line-height:1.7;
+}
+.qa-item summary::-webkit-details-marker{display:none;}
+.qa-q,.qa-a{
+  width:28px;height:28px;flex-shrink:0;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Shippori Mincho',serif;font-weight:800;color:#fff;font-size:14px;
+  margin-top:2px;
+}
+.qa-q{background:var(--green);}
+.qa-a{background:var(--brown);}
+.qa-body{
+  display:flex;gap:12px;padding:0 16px 16px;
+  font-size:14px;color:#4c4536;
+}
+.qa-toggle{margin-left:auto;color:var(--brown);font-weight:900;flex-shrink:0;transition:transform .2s;margin-top:2px;}
+details[open] .qa-toggle{transform:rotate(45deg);}
+
+/* アクセス */
+.clinic{background:var(--beige);}
+.clinic-table{width:100%;border-collapse:collapse;background:#fff;border-radius:4px;overflow:hidden;border:1px solid var(--line-c);box-shadow:0 4px 14px rgba(70,60,40,.08);}
+.clinic-table th,.clinic-table td{
+  padding:14px 15px;font-size:14px;border-bottom:1px solid var(--line-c);
+  vertical-align:top;text-align:left;
+}
+.clinic-table tr:last-child th,.clinic-table tr:last-child td{border-bottom:none;}
+.clinic-table th{width:32%;background:#faf6ec;color:var(--green-deep);font-weight:700;}
+.hours-table{width:100%;border-collapse:collapse;margin-top:8px;font-size:12px;}
+.hours-table th,.hours-table td{border:1px solid var(--line-c);padding:6px 4px;text-align:center;}
+.hours-table th{background:#faf6ec;color:var(--green-deep);}
+.hours-table .on{color:var(--green);font-weight:900;}
+.hours-table .off{color:#c9c0ad;}
+.map-box{
+  margin-top:18px;border-radius:4px;overflow:hidden;border:1px solid var(--line-c);
+  box-shadow:0 5px 16px rgba(70,60,40,.12);
+}
+.map-box iframe{width:100%;height:320px;border:0;}
+
+/* footer */
+.footer{
+  background:var(--green-deep);color:#a9c2b3;
+  padding:30px 0 115px;text-align:center;font-size:12px;line-height:2;
+}
+.footer b{
+  font-family:'Shippori Mincho',serif;
+  color:#fff;font-size:16px;display:block;margin-bottom:8px;letter-spacing:.14em;
+}
+
+/* fixed bottom cta */
+.fixed-cta{
+  position:fixed;left:0;right:0;bottom:0;z-index:200;
+  background:rgba(31,68,56,.97);
+  padding:10px 12px calc(10px + env(safe-area-inset-bottom));
+  display:flex;gap:10px;
+  box-shadow:0 -6px 20px rgba(0,0,0,.22);
+}
+.fixed-cta .btn{flex:1;padding:12px 8px;font-size:15px;border-radius:8px;box-shadow:none;}
+.fixed-cta .btn small{font-size:10px;}
+.fixed-cta .btn svg{width:20px;height:20px;}
+
+@media(min-width:600px){
+  .cta-btns{flex-direction:row;}
+  .cta-btns .btn{flex:1;}
+  .feature-photo img{height:265px;}
+}
+</style>
+</head>
+<body>
+
+<!-- header -->
+<header class="header">
+  <div class="header-in">
+    <div class="logo">
+      <b>しっとる整体院</b>
+      <span>岡山駅 徒歩5分｜慢性腰痛・肩こり専門</span>
+    </div>
+    <a class="header-tel" href="tel:0862000000">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+      電話する
+    </a>
+  </div>
+</header>
+
+<!-- ===== 1. FV ===== -->
+<div class="hero">
+  <div class="hero-in">
+    <span class="hero-lead">岡山駅 徒歩5分の整体院</span>
+    <h1>
+      その腰痛・肩こり、<br>
+      もう<span class="em">「歳のせい」</span>に<br>
+      しない。
+    </h1>
+    <p class="hero-sub">揉んでも戻るつらさに、姿勢と体の使い方から向き合う整体です。</p>
+    <div class="hero-offer">
+      <div class="ol">初回体験（カウンセリング＋施術）</div>
+      <div class="op">
+        <span class="was">通常 6,600円</span>
+        <span class="now">2,980<small>円</small></span>
+      </div>
+      <div class="on">※税込・完全予約制</div>
+    </div>
+    <div class="hero-badges">
+      <div class="hero-badge">安心の<br><b>完全予約制</b></div>
+      <div class="hero-badge">夜<b>21時</b>まで<br>受付</div>
+      <div class="hero-badge">岡山駅<br>徒歩<b>約5分</b></div>
+    </div>
+  </div>
+</div>
+<p class="hero-note">※施術は医療行為ではありません。効果の感じ方には個人差があります。</p>
+
+<!-- ===== 2. CTA 1 ===== -->
+<div class="cta">
+  <div class="wrap">
+    <p class="cta-title">まずは初回体験で<br>お体の状態を知ることから</p>
+    <p class="cta-note">「話を聞いてみたい」だけでも大歓迎。無理な回数のご案内はいたしません。</p>
+    <div class="cta-btns">
+      <a class="btn btn-line" href="#" onclick="alert('仮リンクです（本番でLINE URLを設定）');return false;">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 5.7 2 10.2c0 4 3.4 7.4 8 8.1.3.1.7.2.8.5.1.2.1.6 0 .8l-.1.8c0 .2-.2.9.8.5s5.2-3.1 7.1-5.3C20.4 13.9 22 12.2 22 10.2 22 5.7 17.5 2 12 2z"/></svg>
+        <span class="btn-inner">LINEでかんたん予約<small>24時間受付・空き時間もすぐ確認</small></span>
+        <span class="arrow"></span>
+      </a>
+      <a class="btn btn-tel" href="tel:0862000000">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+        <span class="btn-inner"><span class="cta-tel-num">086-200-0000</span><small>受付 平日・土 10:00〜21:00</small></span>
+        <span class="arrow"></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 3. 悩みの共感 ===== -->
+<section class="nayami">
+  <div class="wrap">
+    <p class="sec-label">CHECK</p>
+    <h2 class="sec-title">こんなつらさ、<br>あきらめて<span class="em">いませんか？</span></h2>
+    <div class="photo"><img src="images/nayami.jpg" alt="長時間のデスクワークで腰や肩のつらさを抱える男性" loading="lazy"></div>
+    <div class="nayami-list">
+      <div class="nayami-item"><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span>デスクワークで夕方になると腰・肩がずっしり重くなる</div>
+      <div class="nayami-item"><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span>マッサージに行っても、楽なのはその直後だけ</div>
+      <div class="nayami-item"><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span>朝起きた瞬間から、腰が重い・こわばっている</div>
+      <div class="nayami-item"><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span>湿布や痛み止めでその場をしのぐのが習慣になっている</div>
+      <div class="nayami-item"><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span>猫背・姿勢の悪さを家族や同僚に指摘されたことがある</div>
+      <div class="nayami-item"><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span>「もう何年もこうだから」と、半分あきらめている</div>
+    </div>
+    <div class="nayami-close">
+      ひとつでも当てはまったら、<br>
+      それは<span class="em">体からのサイン</span>です。<br>
+      我慢を続ける前に、一度ご相談ください。
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4. 原因の提示 ===== -->
+<section class="cause">
+  <div class="wrap">
+    <p class="sec-label">CAUSE</p>
+    <h2 class="sec-title">なぜ、揉んでも<br>また戻ってしまうのか？</h2>
+    <p class="cause-lead">
+      つらさの正体は「硬くなった筋肉」<br>
+      そのものではなく、<br>
+      <span class="em">筋肉を硬くさせている原因</span>にあります。
+    </p>
+    <div class="cause-box">
+      <h3>硬さは「結果」であって「原因」ではない</h3>
+      その場で筋肉をほぐしても、猫背や骨盤の傾きがそのままなら、体は数日で元の状態に引き戻されます。「マッサージ直後だけ楽」の繰り返しは、原因が置き去りになっているサインです。
+    </div>
+    <div class="cause-box">
+      <h3>姿勢・骨盤バランスと「日常のクセ」</h3>
+      長時間の座り姿勢、脚組み、スマホをのぞき込む首の角度——。こうした毎日のクセが姿勢や骨盤のバランスを少しずつ崩し、<b>特定の筋肉にだけ負担が集中し続ける状態</b>をつくります。これが慢性的な腰痛・肩こりの多くに関わっています。
+    </div>
+    <div class="cause-point">
+      だから当院は、その場のほぐしで終わらせず、<b>姿勢・骨盤バランスと日常のクセ</b>まで一緒に見直し、<b>つらさが戻りにくい体づくり</b>を目指します。
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5. 選ばれる理由 ===== -->
+<section>
+  <div class="wrap">
+    <p class="sec-label">REASON</p>
+    <h2 class="sec-title">しっとる整体院が<br><span class="em">選ばれる理由</span></h2>
+    <div class="feature-list">
+
+      <div class="feature">
+        <div class="feature-photo"><img src="images/shijutsu1.jpg" alt="背中の状態を丁寧に確認しながら行う整体施術" loading="lazy"></div>
+        <div class="feature-head"><span class="feature-num">壱</span><h3>初回は約60分。丁寧なカウンセリングと検査から</h3></div>
+        <div class="feature-body">いきなり施術には入りません。生活習慣・お仕事の姿勢・これまでの経過をじっくり伺い、姿勢や動きの検査でお体の状態を一緒に確認。「なぜつらいのか」をご自身の言葉で説明できる状態になってから施術に進みます。</div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-head"><span class="feature-num">弐</span><h3>バキバキしない、ソフトな施術</h3></div>
+        <div class="feature-body">強く押したり、無理にひねったりする施術は行いません。体の緊張を招かない、やさしい刺激で筋肉と関節をゆるめていきます。「整体は痛そうで怖い」という方や、初めての方こそ安心して受けていただけます。</div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-photo"><img src="images/shijutsu2.jpg" alt="施術ベッドで一人ひとりに寄り添うケアの様子" loading="lazy"></div>
+        <div class="feature-head"><span class="feature-num">参</span><h3>お一人おひとりに合わせたオーダーメイド施術</h3></div>
+        <div class="feature-body">同じ「腰痛」でも、原因も生活背景も人それぞれ。決まったコースをこなすのではなく、毎回の状態に合わせて施術内容を組み立てます。ご自宅でできる簡単なセルフケアや座り方のコツもお伝えします。</div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-head"><span class="feature-num">四</span><h3>夜21時まで受付。仕事帰りに通える</h3></div>
+        <div class="feature-body">平日・土曜は夜21時まで受付。残業のある日でも、お仕事帰りに立ち寄れます。岡山駅から徒歩約5分なので、通勤経路のまま通えるのも続けやすさのポイントです。</div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-head"><span class="feature-num">五</span><h3>完全予約制。待ち時間なし・施術はマンツーマン</h3></div>
+        <div class="feature-body">完全予約制のため、待合室で長く待つことはありません。お約束の時間はあなたのためだけの時間。他の方を気にせず、落ち着いた空間でお体と向き合えます。</div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-head"><span class="feature-num">六</span><h3>通院計画を押し付けません</h3></div>
+        <div class="feature-body">お体の状態から見た目安の通い方はご提案しますが、最終的に決めるのはあなたです。高額な回数券の強引な勧誘や、不安をあおるようなご案内は一切いたしません。納得して通える整体院でありたいと考えています。</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 6. 中間CTA ===== -->
+<div class="cta cta-strong">
+  <div class="wrap">
+    <p class="cta-title">初回2,980円で、<br>「揉んで終わり」との違いを体験</p>
+    <p class="cta-note">ご予約はLINEが便利です。ご質問だけでもお気軽にどうぞ。</p>
+    <div class="cta-btns">
+      <a class="btn btn-line" href="#" onclick="alert('仮リンクです（本番でLINE URLを設定）');return false;">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 5.7 2 10.2c0 4 3.4 7.4 8 8.1.3.1.7.2.8.5.1.2.1.6 0 .8l-.1.8c0 .2-.2.9.8.5s5.2-3.1 7.1-5.3C20.4 13.9 22 12.2 22 10.2 22 5.7 17.5 2 12 2z"/></svg>
+        <span class="btn-inner">LINEでかんたん予約<small>24時間受付</small></span>
+        <span class="arrow"></span>
+      </a>
+      <a class="btn btn-tel" href="tel:0862000000">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+        <span class="btn-inner"><span class="cta-tel-num">086-200-0000</span><small>受付 平日・土 10:00〜21:00</small></span>
+        <span class="arrow"></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 7. 施術の流れ ===== -->
+<section class="flow">
+  <div class="wrap">
+    <p class="sec-label">FLOW</p>
+    <h2 class="sec-title">初回体験の流れ</h2>
+    <p class="sec-intro">初回はカウンセリングを含めて約60分。<br>流れが分かっていれば、初めてでも安心です。</p>
+    <div class="flow-list">
+      <div class="flow-step">
+        <div class="flow-num">1</div>
+        <div class="flow-body">
+          <h3>カウンセリング</h3>
+          <p>問診票をもとに、つらさの経過やお仕事・生活の様子をじっくり伺います。「どうなりたいか」のゴールもここで一緒に決めます。</p>
+          <div class="tip">動きやすい服装でお越しください（お着替えの貸出もあります）。</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">2</div>
+        <div class="flow-body">
+          <h3>姿勢・動きの検査</h3>
+          <p>立ち姿勢・骨盤のバランス・体の動きをチェックし、つらさに関わっているポイントを分かりやすくご説明します。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">3</div>
+        <div class="flow-body">
+          <h3>施術</h3>
+          <p>検査結果に合わせたソフトな施術で、負担が集中している筋肉・関節をゆるめ、体のバランスを整えていきます。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">4</div>
+        <div class="flow-body">
+          <h3>施術後の説明・今後のご提案</h3>
+          <p>施術前後の変化を一緒に確認し、ご自宅でのセルフケアと、お体に合った通い方の目安をご提案します。通うかどうかはご自身でお決めください。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 8. 料金 ===== -->
+<section>
+  <div class="wrap">
+    <p class="sec-label">PRICE</p>
+    <h2 class="sec-title">料金のご案内</h2>
+    <p class="sec-intro">分かりやすい料金設定です。表示はすべて税込です。</p>
+    <table class="price-table">
+      <tr class="hl">
+        <th>初回体験<small>カウンセリング＋検査＋施術（約60分）</small></th>
+        <td><span class="was">通常 6,600円</span>2,980<small>円</small></td>
+      </tr>
+      <tr>
+        <th>2回目以降<small>施術（約40分）</small></th>
+        <td>6,600<small>円</small></td>
+      </tr>
+      <tr>
+        <th>継続して通われる方へ<small>ペースに合わせたお得なプランもご用意しています。ご希望の方にのみご案内します。</small></th>
+        <td><small>ご来院時にご案内</small></td>
+      </tr>
+    </table>
+    <p class="price-note">※当院の施術は自費（保険適用外）です。<br>※初回体験は「まずは一度受けて判断したい」という方のための価格です。2回目以降のご予約を強くおすすめすることはありません。</p>
+  </div>
+</section>
+
+<!-- ===== 9. お客様の声 ===== -->
+<section class="voice">
+  <div class="wrap">
+    <p class="sec-label">VOICE</p>
+    <h2 class="sec-title">通われている方の声</h2>
+    <div class="photo"><img src="images/kaifuku.jpg" alt="施術を受けてリラックスした表情で過ごす様子" loading="lazy"></div>
+
+    <div class="voice-card">
+      <div class="voice-head">
+        <div class="voice-avatar">M</div>
+        <div class="voice-meta">
+          <b>40代・男性（会社員／デスクワーク）</b>
+          <span>長年の腰の重だるさで来院</span>
+        </div>
+      </div>
+      <h3>夕方の「腰が固まる感じ」が気にならない日が増えました。</h3>
+      <p>在宅勤務が増えてから腰の重さがひどくなり、マッサージ通いを繰り返していました。ここでは最初に姿勢を見ながら「なぜつらくなるのか」を説明してもらえたのが納得感がありました。教わった座り方を意識するようになってから、夕方のつらさが気にならない日が増えています。</p>
+    </div>
+
+    <div class="voice-card">
+      <div class="voice-head">
+        <div class="voice-avatar b">K</div>
+        <div class="voice-meta">
+          <b>30代・女性（事務職）</b>
+          <span>肩こり・猫背が気になり来院</span>
+        </div>
+      </div>
+      <h3>バキバキされない整体を探していた私にぴったりでした。</h3>
+      <p>整体は痛いイメージがあって避けていたのですが、ここは終始ソフトで、施術中に眠くなるくらいでした。それでも施術後は肩まわりが軽く感じられて驚きました。仕事帰りに21時まで通えるのも、続けられている理由です。</p>
+    </div>
+
+    <div class="voice-card">
+      <div class="voice-head">
+        <div class="voice-avatar c">S</div>
+        <div class="voice-meta">
+          <b>50代・男性（管理職）</b>
+          <span>朝の腰のこわばりで来院</span>
+        </div>
+      </div>
+      <h3>「歳のせい」とあきらめる前に来てよかった。</h3>
+      <p>朝起きるたびに腰が重く、もう歳だから仕方ないと思っていました。カウンセリングで日常のクセを指摘されて思い当たることばかり。回数券を売り込まれることもなく、自分のペースで通えるのがありがたいです。今は月1回のメンテナンスで通っています。</p>
+    </div>
+
+    <p class="voice-disc">※個人の感想であり、感じ方には個人差があります。<br>※掲載内容はサンプルです。</p>
+  </div>
+</section>
+
+<!-- ===== 10. Q&A ===== -->
+<section>
+  <div class="wrap">
+    <p class="sec-label">Q&amp;A</p>
+    <h2 class="sec-title">よくあるご質問</h2>
+
+    <details class="qa-item" open>
+      <summary><span class="qa-q">Q</span>何回くらい通えばよくなりますか？<span class="qa-toggle">＋</span></summary>
+      <div class="qa-body"><span class="qa-a">A</span><p>お体の状態や生活習慣によって異なるため、一概には言えません。初回のカウンセリングと検査の結果をもとに、あなたに合った通い方の目安をご提案します。目安はあくまでご提案であり、通うかどうか・どのペースで通うかはご自身でお決めいただけます。</p></div>
+    </details>
+
+    <details class="qa-item">
+      <summary><span class="qa-q">Q</span>健康保険は使えますか？<span class="qa-toggle">＋</span></summary>
+      <div class="qa-body"><span class="qa-a">A</span><p>当院の施術はすべて自費（保険適用外）です。そのぶん時間や施術内容の制約がなく、お一人おひとりの状態に合わせたオーダーメイドの施術に集中できます。</p></div>
+    </details>
+
+    <details class="qa-item">
+      <summary><span class="qa-q">Q</span>施術は痛くありませんか？<span class="qa-toggle">＋</span></summary>
+      <div class="qa-body"><span class="qa-a">A</span><p>バキバキと鳴らしたり、強く押したりする施術は行いません。体がこわばらない程度のソフトな刺激で進めますので、整体が初めての方や刺激が苦手な方も安心してお受けいただけます。施術中も遠慮なくお声がけください。</p></div>
+    </details>
+
+    <details class="qa-item">
+      <summary><span class="qa-q">Q</span>どんな服装で行けばいいですか？<span class="qa-toggle">＋</span></summary>
+      <div class="qa-body"><span class="qa-a">A</span><p>動きやすい服装（ジャージ・スウェットなど）がおすすめです。お仕事帰りのスーツやスカートの場合も、お着替えをご用意していますので、そのままお越しいただいて大丈夫です。</p></div>
+    </details>
+
+    <details class="qa-item">
+      <summary><span class="qa-q">Q</span>駐車場はありますか？<span class="qa-toggle">＋</span></summary>
+      <div class="qa-body"><span class="qa-a">A</span><p>専用駐車場はございませんが、ビル周辺に複数のコインパーキングがあります。お車でお越しの際は、ご予約時にお近くの駐車場をご案内します。電車の場合はJR岡山駅から徒歩約5分です。</p></div>
+    </details>
+
+    <details class="qa-item">
+      <summary><span class="qa-q">Q</span>予約なしで行っても大丈夫ですか？<span class="qa-toggle">＋</span></summary>
+      <div class="qa-body"><span class="qa-a">A</span><p>当院は完全予約制のため、事前のご予約をお願いしています。LINEなら24時間いつでも予約リクエストが可能です。当日のご予約も、空きがあればご案内できますのでお気軽にお問い合わせください。</p></div>
+    </details>
+  </div>
+</section>
+
+<!-- ===== 11. アクセス ===== -->
+<section class="clinic">
+  <div class="wrap">
+    <p class="sec-label">ACCESS</p>
+    <h2 class="sec-title">院情報・アクセス</h2>
+    <table class="clinic-table">
+      <tr><th>院名</th><td>しっとる整体院</td></tr>
+      <tr><th>住所</th><td>〒700-0901<br>岡山県岡山市北区本町6-36<br>第一セントラルビル4階</td></tr>
+      <tr><th>アクセス</th><td>JR「岡山駅」より徒歩約5分</td></tr>
+      <tr><th>電話</th><td><a href="tel:0862000000" style="color:var(--brown-deep);font-weight:700;">086-200-0000</a></td></tr>
+      <tr><th>受付時間</th><td>
+        平日・土 10:00〜21:00
+        <table class="hours-table">
+          <tr><th></th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th><th>日祝</th></tr>
+          <tr><th>10:00〜21:00</th><td class="on">◯</td><td class="on">◯</td><td class="on">◯</td><td class="on">◯</td><td class="on">◯</td><td class="on">◯</td><td class="off">休</td></tr>
+        </table>
+      </td></tr>
+      <tr><th>定休日</th><td>日曜・祝日</td></tr>
+      <tr><th>ご予約</th><td>完全予約制（LINE・お電話にて）</td></tr>
+    </table>
+    <div class="map-box">
+      <iframe src="https://maps.google.com/maps?q=%E5%B2%A1%E5%B1%B1%E7%9C%8C%E5%B2%A1%E5%B1%B1%E5%B8%82%E5%8C%97%E5%8C%BA%E6%9C%AC%E7%94%BA6-36%20%E7%AC%AC%E4%B8%80%E3%82%BB%E3%83%B3%E3%83%88%E3%83%A9%E3%83%AB%E3%83%93%E3%83%AB&z=17&output=embed" loading="lazy" title="しっとる整体院の地図" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 12. 最終CTA ===== -->
+<div class="cta cta-strong">
+  <div class="wrap">
+    <p class="cta-title">我慢の毎日から、<br>そろそろ抜け出しませんか</p>
+    <p class="cta-note">初回体験 2,980円（税込）・完全予約制。ご質問だけでもお気軽に。</p>
+    <div class="cta-btns">
+      <a class="btn btn-line" href="#" onclick="alert('仮リンクです（本番でLINE URLを設定）');return false;">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 5.7 2 10.2c0 4 3.4 7.4 8 8.1.3.1.7.2.8.5.1.2.1.6 0 .8l-.1.8c0 .2-.2.9.8.5s5.2-3.1 7.1-5.3C20.4 13.9 22 12.2 22 10.2 22 5.7 17.5 2 12 2z"/></svg>
+        <span class="btn-inner">LINEでかんたん予約<small>24時間受付</small></span>
+        <span class="arrow"></span>
+      </a>
+      <a class="btn btn-tel" href="tel:0862000000">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+        <span class="btn-inner"><span class="cta-tel-num">086-200-0000</span><small>受付 平日・土 10:00〜21:00</small></span>
+        <span class="arrow"></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="wrap">
+    <b>しっとる整体院</b>
+    〒700-0901 岡山県岡山市北区本町6-36 第一セントラルビル4階<br>
+    運営：株式会社しっとる<br><br>
+    © Shittoru Seitai-in
+  </div>
+</footer>
+
+<!-- fixed bottom CTA -->
+<div class="fixed-cta">
+  <a class="btn btn-line" href="#" onclick="alert('仮リンクです（本番でLINE URLを設定）');return false;">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 5.7 2 10.2c0 4 3.4 7.4 8 8.1.3.1.7.2.8.5.1.2.1.6 0 .8l-.1.8c0 .2-.2.9.8.5s5.2-3.1 7.1-5.3C20.4 13.9 22 12.2 22 10.2 22 5.7 17.5 2 12 2z"/></svg>
+    <span class="btn-inner">LINE予約<small>24時間受付</small></span>
+  </a>
+  <a class="btn btn-tel" href="tel:0862000000">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+    <span class="btn-inner">電話予約<small>〜21:00受付</small></span>
+  </a>
+</div>
+
+</body>
+</html>
