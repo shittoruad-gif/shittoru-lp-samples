@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LPとホームページの違い｜なぜ集客にはLPなのか【かんたん解説】</title>
+<meta name="description" content="LP（ランディングページ）とホームページは何が違う？なぜ集客にはLPが向いているのか。初めての方向けに図解でわかりやすく解説します。">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1c2430;
+  --sub:#5d6b7c;
+  --bg:#f4f6f9;
+  --accent:#2563b0;
+  --accent-deep:#1a4a85;
+  --orange:#f07a1d;
+  --green:#00915a;
+  --red:#d33a2f;
+  --line:#e3e8ef;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Noto Sans JP',sans-serif;
+  background:#fff;
+  color:var(--ink);
+  line-height:1.9;
+  font-size:16px;
+}
+img,svg{max-width:100%;display:block;}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px;}
+
+.topbar{
+  background:#fff;border-bottom:1px solid var(--line);
+  position:sticky;top:0;z-index:100;
+}
+.topbar-in{
+  max-width:720px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:12px 20px;
+}
+.topbar b{font-size:15px;color:var(--ink);}
+.topbar a.back{
+  font-size:13px;font-weight:700;color:var(--accent);text-decoration:none;
+  display:flex;align-items:center;gap:4px;
+}
+.topbar a.back::before{
+  content:"";width:8px;height:8px;
+  border-left:2px solid var(--accent);border-bottom:2px solid var(--accent);
+  transform:rotate(45deg);
+}
+
+.hero{
+  background:linear-gradient(150deg,#16233a,#274469 70%,#2f5a8a);
+  color:#fff;text-align:center;
+  padding:48px 0 44px;
+}
+.hero .en{
+  font-family:'Montserrat',sans-serif;
+  font-size:12px;letter-spacing:.35em;color:#9fc0e8;margin-bottom:10px;
+}
+.hero h1{
+  font-size:clamp(23px,5.8vw,32px);
+  font-weight:900;line-height:1.6;
+}
+.hero h1 .em{color:#ffb35c;}
+.hero p{margin-top:12px;font-size:14px;color:#c6d6ea;}
+
+section{padding:48px 0;}
+section.alt{background:var(--bg);}
+.sec-label{
+  text-align:center;font-family:'Montserrat',sans-serif;
+  font-size:11px;font-weight:700;letter-spacing:.3em;
+  color:var(--accent);margin-bottom:8px;
+}
+h2{
+  text-align:center;font-size:clamp(20px,5.2vw,26px);
+  font-weight:900;line-height:1.6;margin-bottom:24px;
+}
+h2 .em{color:var(--accent);}
+h2 .marker{background:linear-gradient(transparent 62%,#ffe08a 62%);}
+p.body{font-size:15px;color:#39434f;margin-bottom:16px;}
+p.body b{color:var(--accent-deep);}
+
+.point-box{
+  background:#eef4fb;border-left:5px solid var(--accent);
+  border-radius:10px;padding:16px 18px;
+  font-size:15px;font-weight:700;color:var(--accent-deep);
+  margin:20px 0;
+}
+
+/* 比較図 */
+.diagram{
+  background:#fff;border:1px solid var(--line);border-radius:16px;
+  padding:18px 14px;margin:22px 0;
+  box-shadow:0 4px 14px rgba(28,42,68,.06);
+}
+.diagram h3{
+  text-align:center;font-size:15px;font-weight:900;margin-bottom:12px;
+}
+.diagram svg{width:100%;height:auto;}
+.diagram .cap{font-size:12px;color:var(--sub);text-align:center;margin-top:10px;}
+
+/* 比較表 */
+.compare{width:100%;border-collapse:collapse;font-size:13px;margin:20px 0;}
+.compare th,.compare td{
+  border:1px solid var(--line);padding:12px 10px;text-align:center;vertical-align:top;
+}
+.compare thead th{font-size:14px;padding:14px 10px;}
+.compare th.hp{background:#eef1f5;color:#4a5768;}
+.compare th.lp{background:#fff3e6;color:#b05a0e;}
+.compare tbody th{background:#f7f9fc;font-weight:700;width:26%;color:var(--ink);}
+.compare td.hp{background:#fbfcfe;color:#4a5768;}
+.compare td.lp{background:#fffaf4;font-weight:700;color:#8a4a10;}
+
+/* 理由カード */
+.reason-list{display:flex;flex-direction:column;gap:16px;}
+.reason{
+  background:#fff;border:1px solid var(--line);border-radius:14px;
+  padding:18px;display:flex;gap:14px;align-items:flex-start;
+  box-shadow:0 3px 10px rgba(28,42,68,.05);
+}
+.reason .num{
+  font-family:'Montserrat',sans-serif;
+  width:40px;height:40px;flex-shrink:0;border-radius:10px;
+  background:var(--accent);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:700;font-size:17px;
+}
+.reason h3{font-size:16px;font-weight:900;margin-bottom:4px;line-height:1.5;}
+.reason p{font-size:14px;color:#39434f;}
+
+/* おすすめチェック */
+.check-list{display:flex;flex-direction:column;gap:10px;margin-bottom:20px;}
+.check-item{
+  background:#fff;border:1px solid var(--line);border-radius:12px;
+  padding:13px 16px;display:flex;gap:12px;align-items:center;
+  font-weight:700;font-size:14px;
+}
+.check-item .chk{
+  width:24px;height:24px;flex-shrink:0;border-radius:6px;
+  background:var(--green);display:flex;align-items:center;justify-content:center;
+}
+.check-item .chk svg{width:14px;height:14px;}
+
+/* QA */
+.qa-item{
+  background:#fff;border:1px solid var(--line);border-radius:12px;
+  margin-bottom:12px;overflow:hidden;
+}
+.qa-item summary{
+  list-style:none;cursor:pointer;
+  display:flex;align-items:flex-start;gap:12px;
+  padding:15px 16px;font-weight:700;font-size:14px;
+}
+.qa-item summary::-webkit-details-marker{display:none;}
+.qa-q,.qa-a{
+  width:26px;height:26px;flex-shrink:0;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Montserrat',sans-serif;font-weight:700;color:#fff;font-size:13px;
+}
+.qa-q{background:var(--accent);}
+.qa-a{background:var(--orange);}
+.qa-body{display:flex;gap:12px;padding:0 16px 15px;font-size:14px;color:#39434f;}
+.qa-toggle{margin-left:auto;color:var(--accent);font-weight:900;flex-shrink:0;transition:transform .2s;}
+details[open] .qa-toggle{transform:rotate(45deg);}
+
+/* 流れ */
+.flow{display:flex;flex-direction:column;gap:0;}
+.flow-step{display:flex;gap:14px;position:relative;padding-bottom:22px;}
+.flow-step:last-child{padding-bottom:0;}
+.flow-step::before{
+  content:"";position:absolute;left:19px;top:42px;bottom:2px;
+  width:2px;background:#dbe3ee;
+}
+.flow-step:last-child::before{display:none;}
+.flow-num{
+  width:40px;height:40px;flex-shrink:0;border-radius:50%;
+  background:var(--accent);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Montserrat',sans-serif;font-weight:700;font-size:16px;
+  position:relative;z-index:1;
+}
+.flow-body{flex:1;background:var(--bg);border-radius:12px;padding:13px 16px;border:1px solid var(--line);}
+.flow-body h3{font-size:15px;font-weight:900;margin-bottom:2px;}
+.flow-body p{font-size:13px;color:#39434f;}
+
+/* CTA */
+.cta{
+  background:linear-gradient(150deg,#16233a,#274469 75%,#2f5a8a);
+  color:#fff;text-align:center;
+  padding:44px 0 48px;
+}
+.cta h2{color:#fff;}
+.cta p{font-size:14px;color:#c6d6ea;margin-bottom:22px;}
+.cta-btn{
+  display:block;max-width:440px;margin:0 auto 12px;
+  background:linear-gradient(180deg,#ff9438,var(--orange));
+  color:#fff;text-decoration:none;
+  font-weight:900;font-size:17px;
+  padding:17px 20px;border-radius:14px;
+  box-shadow:0 6px 0 #b85c0d,0 10px 20px rgba(240,122,29,.35);
+  transition:transform .15s ease;
+}
+.cta-btn:active{transform:scale(.97);}
+.cta-btn small{display:block;font-size:11px;font-weight:500;opacity:.9;}
+.cta-sub{
+  display:block;max-width:440px;margin:0 auto;
+  background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.35);
+  color:#fff;text-decoration:none;
+  font-weight:700;font-size:14px;
+  padding:13px 20px;border-radius:12px;
+}
+
+.footer{
+  background:#16233a;color:#93a7c2;
+  text-align:center;font-size:12px;
+  padding:26px 16px;
+}
+.footer b{color:#fff;display:block;font-size:14px;margin-bottom:4px;}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <b>LPかんたん解説資料</b>
+    <a class="back" href="../">サンプル一覧へ戻る</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="en">WHAT IS LP ?</p>
+    <h1>ホームページがあるのに、<br>問い合わせが来ないのは<br><span class="em">なぜ？</span></h1>
+    <p>答えはシンプル。「見せるページ」と「集客するページ」は別物だからです。</p>
+  </div>
+</header>
+
+<!-- LPとは -->
+<section>
+  <div class="wrap">
+    <p class="sec-label">ABOUT</p>
+    <h2>LP（ランディングページ）とは？</h2>
+    <p class="body">LPとは、広告や検索から来たお客様に<b>最初に着地（ランディング）してもらう、縦長1ページ完結の集客専用ページ</b>のことです。</p>
+    <p class="body">メニューも他ページへのリンクもほとんどなく、お客様の悩みに共感し、解決策を伝え、最後に「予約・問い合わせ」という<b>たった1つの行動</b>へまっすぐ案内します。例えるなら、ホームページが「会社案内のパンフレット」だとすれば、LPは<b>お客様一人ひとりに寄り添って接客する「優秀な営業マン」</b>です。</p>
+    <div class="point-box">LP＝1つの商品・サービスを、1種類のお客様に、1つの行動へ導く「集客の専門ページ」</div>
+  </div>
+</section>
+
+<!-- 違い図解 -->
+<section class="alt">
+  <div class="wrap">
+    <p class="sec-label">DIFFERENCE</p>
+    <h2>ホームページとの違いを<br><span class="marker">図解でわかりやすく</span></h2>
+
+    <div class="diagram">
+      <h3>お客様の動きの違い</h3>
+      <svg viewBox="0 0 700 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ホームページは迷子になりやすく、LPは一直線に予約へ進む図">
+        <!-- HP side -->
+        <rect x="10" y="10" width="330" height="340" rx="14" fill="#eef1f5"/>
+        <text x="175" y="42" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="17" font-weight="700" fill="#4a5768">ホームページ</text>
+        <circle cx="175" cy="80" r="17" fill="#8494a8"/>
+        <circle cx="175" cy="74" r="6" fill="#fff"/>
+        <path d="M164 88 q11 8 22 0 l0 6 q-11 6 -22 0z" fill="#fff"/>
+        <!-- branching arrows -->
+        <g stroke="#a5b2c2" stroke-width="3" fill="none">
+          <path d="M175 102 L80 150"/><path d="M175 102 L175 150"/><path d="M175 102 L270 150"/>
+        </g>
+        <g font-family="'Noto Sans JP',sans-serif" font-size="12" font-weight="700" fill="#4a5768">
+          <rect x="35" y="152" width="90" height="34" rx="8" fill="#fff" stroke="#ccd5e0"/>
+          <text x="80" y="174" text-anchor="middle">会社概要</text>
+          <rect x="130" y="152" width="90" height="34" rx="8" fill="#fff" stroke="#ccd5e0"/>
+          <text x="175" y="174" text-anchor="middle">メニュー</text>
+          <rect x="225" y="152" width="90" height="34" rx="8" fill="#fff" stroke="#ccd5e0"/>
+          <text x="270" y="174" text-anchor="middle">ブログ</text>
+        </g>
+        <g stroke="#a5b2c2" stroke-width="3" fill="none">
+          <path d="M80 186 L120 232"/><path d="M175 186 L175 232"/><path d="M270 186 L230 232"/>
+        </g>
+        <g font-family="'Noto Sans JP',sans-serif" font-size="12" font-weight="700" fill="#4a5768">
+          <rect x="72" y="234" width="96" height="34" rx="8" fill="#fff" stroke="#ccd5e0"/>
+          <text x="120" y="256" text-anchor="middle">アクセス</text>
+          <rect x="184" y="234" width="96" height="34" rx="8" fill="#fff" stroke="#ccd5e0"/>
+          <text x="232" y="256" text-anchor="middle">採用情報</text>
+        </g>
+        <text x="175" y="308" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="14" font-weight="900" fill="#d33a2f">どこを見ればいいか迷って離脱…</text>
+        <text x="175" y="332" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="24">🤔</text>
+
+        <!-- LP side -->
+        <rect x="360" y="10" width="330" height="340" rx="14" fill="#fff3e6"/>
+        <text x="525" y="42" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="17" font-weight="700" fill="#b05a0e">LP</text>
+        <circle cx="525" cy="80" r="17" fill="#f07a1d"/>
+        <circle cx="525" cy="74" r="6" fill="#fff"/>
+        <path d="M514 88 q11 8 22 0 l0 6 q-11 6 -22 0z" fill="#fff"/>
+        <g stroke="#f07a1d" stroke-width="4" fill="none">
+          <path d="M525 102 L525 128"/>
+          <path d="M525 168 L525 194"/>
+          <path d="M525 234 L525 258"/>
+        </g>
+        <g fill="#f07a1d">
+          <path d="M525 136 l-7 -10 14 0z"/>
+          <path d="M525 202 l-7 -10 14 0z"/>
+          <path d="M525 266 l-7 -10 14 0z"/>
+        </g>
+        <g font-family="'Noto Sans JP',sans-serif" font-size="12" font-weight="700" fill="#8a4a10">
+          <rect x="430" y="132" width="190" height="34" rx="8" fill="#fff" stroke="#f0c896"/>
+          <text x="525" y="154" text-anchor="middle">悩みに共感・解決策を提示</text>
+          <rect x="430" y="198" width="190" height="34" rx="8" fill="#fff" stroke="#f0c896"/>
+          <text x="525" y="220" text-anchor="middle">実績・お客様の声で安心</text>
+        </g>
+        <rect x="430" y="266" width="190" height="40" rx="10" fill="#f07a1d"/>
+        <text x="525" y="292" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="15" font-weight="900" fill="#fff">予約・問い合わせ</text>
+        <text x="525" y="336" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="14" font-weight="900" fill="#00915a">一直線だから迷わない！</text>
+      </svg>
+      <p class="cap">ホームページは情報が分散して迷子になりやすい。LPは読む順番が決まっていて、自然と行動まで進めます。</p>
+    </div>
+
+    <table class="compare">
+      <thead>
+        <tr>
+          <th style="background:#f7f9fc;"></th>
+          <th class="hp">ホームページ</th>
+          <th class="lp">LP</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>目的</th>
+          <td class="hp">会社・お店の情報を<br>幅広く伝える</td>
+          <td class="lp">予約・問い合わせを<br>獲得する</td>
+        </tr>
+        <tr>
+          <th>ページ構成</th>
+          <td class="hp">複数ページ＋メニュー</td>
+          <td class="lp">縦長1ページ完結</td>
+        </tr>
+        <tr>
+          <th>読む相手</th>
+          <td class="hp">すべての人</td>
+          <td class="lp">特定の悩みを持つ人<br>（例：腰痛の人だけ）</td>
+        </tr>
+        <tr>
+          <th>出口</th>
+          <td class="hp">たくさんのリンク</td>
+          <td class="lp">予約ボタン1つ</td>
+        </tr>
+        <tr>
+          <th>広告との相性</th>
+          <td class="hp">△ 迷子になりやすい</td>
+          <td class="lp">◎ 広告の受け皿に最適</td>
+        </tr>
+        <tr>
+          <th>役割で例えると</th>
+          <td class="hp">会社案内パンフレット</td>
+          <td class="lp">優秀な営業マン</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="point-box">どちらが良い・悪いではなく役割が違います。「信頼のホームページ」×「集客のLP」の組み合わせが最強です。</div>
+  </div>
+</section>
+
+<!-- なぜLPか -->
+<section>
+  <div class="wrap">
+    <p class="sec-label">REASON</p>
+    <h2>なぜ集客には<br><span class="em">LPが向いているのか？</span></h2>
+    <div class="reason-list">
+      <div class="reason">
+        <span class="num">1</span>
+        <div>
+          <h3>お客様を迷わせない</h3>
+          <p>読む順番が「悩みへの共感→解決策→安心材料→予約」と設計されているので、お客様は考え込まずに読み進められます。選択肢が1つに絞られているページは、行動につながりやすいのがWeb集客の基本原則です。</p>
+        </div>
+      </div>
+      <div class="reason">
+        <span class="num">2</span>
+        <div>
+          <h3>「今すぐ客」の心に刺さる</h3>
+          <p>「腰痛の人向け」「産後ママ向け」など相手を絞り込むほど、読んだ人は「これ、私のことだ」と感じます。全員向けのホームページでは出せない“自分ごと感”が、LPの最大の武器です。</p>
+        </div>
+      </div>
+      <div class="reason">
+        <span class="num">3</span>
+        <div>
+          <h3>広告の効果を最大化する受け皿になる</h3>
+          <p>Instagram広告やGoogle広告をクリックした人をホームページのトップに送ると、多くは目的の情報を探せず離脱します。広告とメッセージがつながったLPで受け止めることで、広告費のムダを減らせます。</p>
+        </div>
+      </div>
+      <div class="reason">
+        <span class="num">4</span>
+        <div>
+          <h3>スマホで読まれる前提で作られている</h3>
+          <p>今、お店探しの主役はスマホです。LPは縦にスクロールするだけで読み切れて、画面下に常に予約ボタンが付いているので、「読み終わったその瞬間」を逃しません。</p>
+        </div>
+      </div>
+      <div class="reason">
+        <span class="num">5</span>
+        <div>
+          <h3>効果の検証・改善がしやすい</h3>
+          <p>1ページだけなので「何人見て、何人予約したか」が明確です。見出しや価格の見せ方を変えて反応を比べる、といった改善が簡単にでき、集客を「勘」から「数字」に変えられます。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- おすすめ -->
+<section class="alt">
+  <div class="wrap">
+    <p class="sec-label">CHECK</p>
+    <h2>こんな方はLPの<br>導入がおすすめです</h2>
+    <div class="check-list">
+      <div class="check-item"><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span>ホームページはあるのに、問い合わせがほとんど来ない</div>
+      <div class="check-item"><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span>InstagramやGoogleで広告を始めたい・始めている</div>
+      <div class="check-item"><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span>新メニュー・キャンペーンを集中的に売り出したい</div>
+      <div class="check-item"><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span>ポータルサイト（ホットペッパー等）の掲載料に頼らない集客導線がほしい</div>
+      <div class="check-item"><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span>お店の強みを、価格競争ではなく「価値」で伝えたい</div>
+    </div>
+    <p class="body" style="text-align:center;">ひとつでも当てはまったら、LPが力になれる可能性が高いです。</p>
+  </div>
+</section>
+
+<!-- QA -->
+<section>
+  <div class="wrap">
+    <p class="sec-label">Q&amp;A</p>
+    <h2>よくあるギモン</h2>
+
+    <details class="qa-item" open>
+      <summary><span class="qa-q">Q</span>ホームページがあれば、LPはいらないのでは？<span class="qa-toggle">＋</span></summary>
+      <div class="qa-body"><span class="qa-a">A</span><p>役割が違うので、置き換えではなく「追加」です。ホームページはお店の信頼を支える土台、LPは新規のお客様を連れてくる営業マン。両方そろうと、広告→LPで興味を持った方がホームページで信頼を確認して予約する、という強い流れが作れます。</p></div>
+    </details>
+
+    <details class="qa-item">
+      <summary><span class="qa-q">Q</span>LPを作れば、それだけでお客様は来ますか？<span class="qa-toggle">＋</span></summary>
+      <div class="qa-body"><span class="qa-a">A</span><p>LPは「受け皿」なので、見てもらう入口（広告・SNS・Googleビジネスプロフィール・チラシのQRコードなど）とセットで考えるのが正解です。当社では入口づくり（広告運用・SNS）とあわせたご提案も可能です。</p></div>
+    </details>
+
+    <details class="qa-item">
+      <summary><span class="qa-q">Q</span>1ページだけなのに、制作する意味はあるの？<span class="qa-toggle">＋</span></summary>
+      <div class="qa-body"><span class="qa-a">A</span><p>1ページだからこそ、構成・文章・デザインのすべてを「予約してもらう」ためだけに磨き込めます。実際にサンプルをスマホでご覧いただくと、普通のホームページとの読み心地の違いを実感いただけるはずです。</p></div>
+    </details>
+
+    <details class="qa-item">
+      <summary><span class="qa-q">Q</span>何を載せればいいか、自分では分かりません…<span class="qa-toggle">＋</span></summary>
+      <div class="qa-body"><span class="qa-a">A</span><p>ご安心ください。ヒアリングでお店の強み・お客様層・よくある悩みを伺い、構成と文章はこちらでご用意します。お店側にご準備いただくのは、写真素材と料金などの基本情報が中心です。</p></div>
+    </details>
+
+    <details class="qa-item">
+      <summary><span class="qa-q">Q</span>作ったあとの修正はできますか？<span class="qa-toggle">＋</span></summary>
+      <div class="qa-body"><span class="qa-a">A</span><p>できます。キャンペーン価格の変更や写真の差し替えなど、公開後の運用・改善までサポートします。LPは「作って終わり」ではなく「育てる」ページです。</p></div>
+    </details>
+  </div>
+</section>
+
+<!-- 流れ -->
+<section class="alt">
+  <div class="wrap">
+    <p class="sec-label">FLOW</p>
+    <h2>導入までの流れ</h2>
+    <div class="flow">
+      <div class="flow-step">
+        <div class="flow-num">1</div>
+        <div class="flow-body">
+          <h3>無料相談・ヒアリング</h3>
+          <p>お店の強み・ターゲット・集客のお悩みを伺います。「話を聞いてみたいだけ」でも大歓迎です。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">2</div>
+        <div class="flow-body">
+          <h3>構成・文章のご提案</h3>
+          <p>ヒアリングをもとに、貴店専用のLP構成案とキャッチコピーをご提案します。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">3</div>
+        <div class="flow-body">
+          <h3>デザイン制作・確認</h3>
+          <p>業種とお客様層に合わせてデザイン。修正のやりとりを重ねて仕上げます。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">4</div>
+        <div class="flow-body">
+          <h3>公開・運用改善</h3>
+          <p>公開して終わりではなく、反応を見ながら一緒に育てていきます。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta">
+  <div class="wrap">
+    <h2>まずは実物のサンプルを<br>ご覧ください</h2>
+    <p>整骨院・整体院・ピラティス・美容室・エステ。<br>業種別のLPサンプルをスマホでそのまま体験できます。</p>
+    <a class="cta-btn" href="../">業種別LPサンプルを見る<small>スマホ推奨・約1分で体験できます</small></a>
+    <a class="cta-sub" href="https://ig-ads.s-toru.com/">制作のご相談はこちら（株式会社しっとる）</a>
+  </div>
+</div>
+
+<footer class="footer">
+  <b>株式会社しっとる</b>
+  〒700-0901 岡山県岡山市北区本町6-36 第一セントラルビル4階
+</footer>
+
+</body>
+</html>
