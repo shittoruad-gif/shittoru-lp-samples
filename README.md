@@ -5,6 +5,7 @@
 | 業種 | URL | デザイン |
 |---|---|---|
 | ポータル（一覧） | /shittoru-lp-samples/ | ネイビー・ビジネス系 |
+| 解説資料（LPとHPの違い） | /shittoru-lp-samples/guide/ | ポータルと同系・図解SVG入り。導入啓蒙用 |
 | 整骨院（交通事故） | https://shittoruad-gif.github.io/shittoru-jiko-lp/ （別リポジトリ） | ネイビー×オレンジ |
 | 整体院 | /shittoru-lp-samples/seitai/ | 深緑×生成り・和モダン（Shippori Mincho） |
 | ピラティス | /shittoru-lp-samples/pilates/ | ティール×コーラル・軽やか（Zen Maru Gothic） |
